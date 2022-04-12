@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex,nofollow">
+        <title>전시연계 - 유영미술관 YouYoung</title>
+        <link rel="shortcut icon" href="../images/common/favicon.png">
+        <link rel="apple-touch-icon" href="../images/common/favicon_ios.png">
+        <link rel="icon" href="../images/common/favicon_android.png">
+
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/sub.css">
+        <link rel="stylesheet" href="../css/event.css">
+
+        <script src="../js/jquery-1.12.0.min.js"></script>
+        <script src="../js/jquery.easing.1.3.js"></script>
+        <script src="../js/jquery.colorbox-min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/sub.js"></script>
+        <script src="../js/event.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="hTop">
+                <div class="hWrap">
+                    <ul class="topNav">
+                        <li><a href="../tnav/login.html">로그인</a></li>
+                        <li><a href="../tnav/join.html">회원가입</a></li>
+                    </ul>
+                    <div class="language">
+                        <button>
+                            <span class="text">KOR</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="#">KOR</a></li>
+                            <li><a href="#">ENG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hBottom">
+                <h1>
+                    <a href="../index.html" title="유영미술관로고">
+                        <img src="../images/common/header_logo.svg" alt="유영미술관로고">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="../youyoung/intro.html" class="mainNav">미술관안내</a>
+                            <ul class="subNav">
+                                <li><a href="../youyoung/intro.html">미술관소개</a></li>
+                                <li><a href="../youyoung/facility.html">시설안내</a></li>
+                                <li><a href="../youyoung/watch.html">관람안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="event.html" class="mainNav">교육/행사</a>
+                            <ul class="subNav">
+                                <li><a href="event.html">예정행사</a></li>
+                                <li><a href="connect.html">전시연계</a></li>
+                                <li><a href="schedule.html">월간일정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../display/current.html" class="mainNav">전시</a>
+                            <ul class="subNav">
+                                <li><a href="../display/current.html">현재전시</a></li>
+                                <li><a href="../display/expected.html">예정전시</a></li>
+                                <li><a href="../display/past.html">지난전시</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../collection/collection.html" class="mainNav">소장품</a>
+                            <ul class="subNav">
+                                <li><a href="../collection/collection.html">전체보기</a></li>
+                                <li><a href="../collection/cfield.html">분야별보기</a></li>
+                            </ul>
+                        <li>
+                            <a href="../art/art.html" class="mainNav">아트샵</a>
+                            <ul class="subNav">
+                                <li><a href="../art/art.html">전체보기</a></li>
+                                <li><a href="../art/afield.html">분야별보기</a></li>
+                                <li><a href="../art/author.html">작가별보기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../service/notice.html" class="mainNav">고객광장</a>
+                            <ul class="subNav">
+                                <li><a href="../service/notice.html">공지사항</a></li>
+                                <li><a href="../service/data.html">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="iconNav">
+                    <ul>
+                        <li class="searchIcon">
+                            <a href="#" title="검색창열기">
+                                <img src="../images/common/header_search_icon.svg" alt="검색아이콘">
+                            </a>
+                        </li>
+                        <li class="hamburgerIcon">
+                            <a href="#" title="패널열기">
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                                <span class="line03"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchMenu">
+                    <div class="searchWrap">
+                        <input type="text" id="searchbox" placeholder="검색어를 입력하세요">
+                        <label for="searchbox">검색어입력상자</label>
+                        <div class="searchKeyword">
+                            <p>추천키워드</p>
+                            <ul>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">미술관소개</a></li>
+                                <li><a href="#">소장품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="indicator">
+            <a href="../index.html" class="home" title="메인페이지가기">
+                <img src="../images/sub/indicatior_home_btn.svg" alt="홈버튼">
+            </a>
+            <div class="mainMenu">
+                <button type="button">
+                    <span class="text">교육/행사</span>
+                    <span class="icon">
+                        <img src="../images/sub/indicatior_arrow_btn.svg" alt="메인메뉴더보기">
+                    </span>
+                </button>
+                <ul>
+                    <li><a href="../youyoung/intro.html">미술관안내</a></li>
+                    <li><a href="event.html">교육/행사</a></li>
+                    <li><a href="../display/current.html">전시</a></li>
+                    <li><a href="../collection/collection.html">소장품</a></li>
+                    <li><a href="../art/art.html">아트샵</a></li>
+                    <li><a href="../service/notice.html">고객광장</a></li>
+                </ul>
+            </div>
+            <div class="subMenu">
+                <button type="button">
+                    <span class="text">전시연계</span>
+                    <span class="icon">
+                        <img src="../images/sub/indicatior_arrow_btn.svg" alt="서브메뉴더보기">
+                    </span>
+                </button>
+                <ul>
+                    <li><a href="event.html">예정행사</a></li>
+                    <li><a href="connect.html">전시연계</a></li>
+                    <li><a href="schedule.html">월간일정</a></li>
+                </ul>
+            </div>
+        </div>
+        <main id="mainBanner" class="mainBanner02">
+            <p>교육/행사</p>
+            <h2>전시연계</h2>
+        </main>
+        <section id="subContents">
+            <h3>연계프로그램</h3>
+            <p>
+                유영미술관의 연계프로그램은 다양한 연령의 사람들이 예술에 대한 교육을 받을 수 있도록 설게한 프로그램 입니다.<br>
+                매 분기 시 여러주제로 프로그램을 열고 있어 많은 예술을 접할 수 있도록 하고 있습니다.<br>
+               개인 및 학교 등 단체 프로그램을 통하여 많은 사람들의 체험을 경험하도록 합니다.
+            </p>
+            <div class="connectWrap">
+                <div class="connectBn">
+                    <figure>
+                        <img src="../images/event/connect_img_01.jpg" alt="체험학습더보기 이미지">
+                        <figcaption>
+                            <a href="#" class="experienceBtn">체험학습<span class="more">more</span></a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/event/connect_img_02.jpg" alt="전시연계더보기 이미지">
+                        <figcaption>
+                            <a href="#" class="displayBtn">전시연계<span class="more">more</span></a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/event/connect_img_03.jpg" alt="직업연계더보기 이미지">
+                        <figcaption>
+                            <a href="#" class="jobBtn">직업연계<span class="more">more</span></a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="connectMore">
+                    <figure class="experience">
+                        <figcaption>
+                            <h4>체험학습</h4>
+                            <p>
+                                수려한 자연속에 위치한 유영미술관 공간을 입체영상으로 만나는<br>
+                                공간탐방 프로그램과 유영미술관의 입주작가와 함께하는 다양한<br>
+                                체험학습을 통해 문화를 즐길 수 있습니다.
+                            </p>
+                            <ul>
+                                <li>화~금 : 단체 예약 접수(10명이상)</li>
+                                <li>토~일 : 2인 이상 예약 접수</li>
+                            </ul>
+                        </figcaption>
+                        <img src="../images/event/connect_img_01.jpg" alt="체험학습 이미지">
+                    </figure>
+                    <figure class="display">
+                        <figcaption>
+                            <h4>전시연계</h4>
+                            <p>
+                                전시작품을 만들어진 학습용 활동지(worksheet)를 통해<br>
+                                에듀케이터(Educator)와 함께 이해를 높이고, 그 주에 주제와<br>
+                                연계된 창작활동까지 할 수 있는 체험 프로그램<br>
+                            </p>
+                            <ul>
+                                <li>대상 : 만 3세 ~ 18세</li>
+                                <li>교육시간 : 전시관람 포함 90분 이내</li>
+                                <li>인원제한 : 20~80명(20명 이상 분반 실시)</li>
+                            </ul>
+                        </figcaption>
+                        <img src="../images/event/connect_img_02.jpg" alt="체험학습 이미지">
+                    </figure>
+                    <figure class="job">
+                        <figcaption>
+                            <h4>직업연계</h4>
+                            <p>
+                                미술관 속 전시회를 기획하고 작품을 수립하고 관리하는<br>
+                                큐레이터 연계 프로그램 큐레이터 체험과 에듀케이터 체험 및<br>
+                                도슨트 체험까지 다양한 주제의 체험을 할 수 있는 프로그램
+                            </p>
+                            <ul>
+                                <li>대상 : 초, 중 고등학생</li>
+                                <li>교육시간 : 주제마다 다름</li>
+                                <li>인원제한 : 20~60명(20명 이상 분반 실시)</li>
+                            </ul>
+                        </figcaption>
+                        <img src="../images/event/connect_img_03.jpg" alt="체험학습 이미지">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="fTop">
+                <div class="innerWrap">
+                    <ul class="fNav">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="../tnav/sitemap.html" class="sitemap">사이트맵</a></li>
+                    </ul>
+                    <div class="familySite">
+                        <button>
+                            <span class="text">FAMILY SITE</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="https://greenart.co.kr/">유영재단</a></li>
+                            <li><a href="https://greenart.co.kr/">유영미술체험관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fBottom">
+                <h1><img src="../images/common/footer_logo.svg" alt="유영미술관로고"></h1>
+                <p>
+                    주소 : 경기도 OO시 OO로 [우] XXXXX<br>
+                    TEL : 031) 000-0000 FAX : 031)000-0000<br>
+                    E-MAIL : youyoung@XXX.XXX<br>
+                    COPYRIGHT© 2021 MUSEUM OF YOUYOUNG All Rights Reserved
+                </p>
+                <ul class="snsIcon">
+                    <li><a href="http://facebook.com">페이스북</a></li>
+                    <li><a href="http://instagram.com">인스타그램</a></li>
+                    <li><a href="http://youtube.com">유튜브</a></li>
+                </ul>
+            </div>
+            <aside class="scrollTop">
+                <a href="#">스크롤탑버튼</a>
+            </aside>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+@import "var";
+
+/* base */
+*{
+   padding: 0; margin: 0;
+   font-family: $basicFont; font-size: 16px; color: $basicText; 
+}
+li{ list-style: none; }
+a{ text-decoration: none; }
+img{ border: none; }
+button{ border: none; cursor: pointer; }
+iframe{ border: none; }
+input{ border: none; }
+.innerWrap{ width: $minWidth; height: 100%; margin: 0 auto; }
+fieldset{ border: none; }

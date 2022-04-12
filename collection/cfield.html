@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex,nofollow">
+        <title>소장품 분야별보기 - 유영미술관 YouYoung</title>
+        <link rel="shortcut icon" href="../images/common/favicon.png">
+        <link rel="apple-touch-icon" href="../images/common/favicon_ios.png">
+        <link rel="icon" href="../images/common/favicon_android.png">
+
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/sub.css">
+        <link rel="stylesheet" href="../css/collection.css">
+
+        <script src="../js/jquery-1.12.0.min.js"></script>
+        <script src="../js/jquery.easing.1.3.js"></script>
+        <script src="../js/jquery.colorbox-min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/sub.js"></script>
+        <script src="../js/cfield.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="hTop">
+                <div class="hWrap">
+                    <ul class="topNav">
+                        <li><a href="../tnav/login.html">로그인</a></li>
+                        <li><a href="../tnav/join.html">회원가입</a></li>
+                    </ul>
+                    <div class="language">
+                        <button>
+                            <span class="text">KOR</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="#">KOR</a></li>
+                            <li><a href="#">ENG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hBottom">
+                <h1>
+                    <a href="../index.html" title="유영미술관로고">
+                        <img src="../images/common/header_logo.svg" alt="유영미술관로고">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="../youyoung/intro.html" class="mainNav">미술관안내</a>
+                            <ul class="subNav">
+                                <li><a href="../youyoung/intro.html">미술관소개</a></li>
+                                <li><a href="../youyoung/facility.html">시설안내</a></li>
+                                <li><a href="../youyoung/watch.html">관람안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../event/event.html" class="mainNav">교육/행사</a>
+                            <ul class="subNav">
+                                <li><a href="../event/event.html">예정행사</a></li>
+                                <li><a href="../event/connect.html">전시연계</a></li>
+                                <li><a href="../event/schedule.html">월간일정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../display/current.html" class="mainNav">전시</a>
+                            <ul class="subNav">
+                                <li><a href="../display/current.html">현재전시</a></li>
+                                <li><a href="../display/expected.html">예정전시</a></li>
+                                <li><a href="../display/past.html">지난전시</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="collection.html" class="mainNav">소장품</a>
+                            <ul class="subNav">
+                                <li><a href="collection.html">전체보기</a></li>
+                                <li><a href="cfield.html">분야별보기</a></li>
+                            </ul>
+                        <li>
+                            <a href="../art/art.html" class="mainNav">아트샵</a>
+                            <ul class="subNav">
+                                <li><a href="../art/art.html">전체보기</a></li>
+                                <li><a href="../art/afield.html">분야별보기</a></li>
+                                <li><a href="../art/author.html">작가별보기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../service/notice.html" class="mainNav">고객광장</a>
+                            <ul class="subNav">
+                                <li><a href="../service/notice.html">공지사항</a></li>
+                                <li><a href="../service/data.html">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="iconNav">
+                    <ul>
+                        <li class="searchIcon">
+                            <a href="#" title="검색창열기">
+                                <img src="../images/common/header_search_icon.svg" alt="검색아이콘">
+                            </a>
+                        </li>
+                        <li class="hamburgerIcon">
+                            <a href="#" title="패널열기">
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                                <span class="line03"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchMenu">
+                    <div class="searchWrap">
+                        <input type="text" id="searchbox" placeholder="검색어를 입력하세요">
+                        <label for="searchbox">검색어입력상자</label>
+                        <div class="searchKeyword">
+                            <p>추천키워드</p>
+                            <ul>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">미술관소개</a></li>
+                                <li><a href="#">소장품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="indicator">
+            <a href="../index.html" class="home" title="메인페이지가기">
+                <img src="../images/sub/indicatior_home_btn.svg" alt="홈버튼">
+            </a>
+            <div class="mainMenu">
+                <button type="button">
+                    <span class="text">소장품</span>
+                    <span class="icon">
+                        <img src="../images/sub/indicatior_arrow_btn.svg" alt="메인메뉴더보기">
+                    </span>
+                </button>
+                <ul>
+                    <li><a href="../youyoung/intro.html">미술관안내</a></li>
+                    <li><a href="../event/event.html">교육/행사</a></li>
+                    <li><a href="../display/current.html">전시</a></li>
+                    <li><a href="collection.html">소장품</a></li>
+                    <li><a href="../art/art.html">아트샵</a></li>
+                    <li><a href="../service/notice.html">고객광장</a></li>
+                </ul>
+            </div>
+            <div class="subMenu">
+                <button type="button">
+                    <span class="text">분야별보기</span>
+                    <span class="icon">
+                        <img src="../images/sub/indicatior_arrow_btn.svg" alt="서브메뉴더보기">
+                    </span>
+                </button>
+                <ul>
+                    <li><a href="collection.html">전체보기</a></li>
+                    <li><a href="cfield.html">분야별보기</a></li>
+                </ul>
+            </div>
+        </div>
+        <main id="mainBanner" class="mainBanner04">
+            <p>소장품</p>
+            <h2>분야별보기</h2>
+        </main>
+        <section id="subContents">
+            <h3>소장품 분야별보기</h3>
+            <div id="searchWrap">
+                <select id="searchCondition">
+                    <label for="searchCondition">검색유형</label>
+                    <option value="전체">전체</option>
+                    <option value="제목">제목</option>
+                </select>
+                <label for="searchBox">예정행사 검색창</label>
+                <input type="text" id="searchBox" placeholder="검색어를 입력해주세요">
+                <button type="submit" id="searchBtn">검색아이콘</button>
+            </div>
+            <div class="cfieldWrap">
+                <div class="tabbox">
+                    <ul class="btn">
+                        <li><a href="#">회화</a></li>
+                        <li><a href="#">판화</a></li>
+                        <li><a href="#">조각</a></li>
+                        <li><a href="#">공예</a></li>
+                        <li><a href="#">설치</a></li>
+                    </ul>
+                    <div class="cfieldContentsWrap"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="fTop">
+                <div class="innerWrap">
+                    <ul class="fNav">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="../tnav/sitemap.html" class="sitemap">사이트맵</a></li>
+                    </ul>
+                    <div class="familySite">
+                        <button>
+                            <span class="text">FAMILY SITE</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="https://greenart.co.kr/">유영재단</a></li>
+                            <li><a href="https://greenart.co.kr/">유영미술체험관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fBottom">
+                <h1><img src="../images/common/footer_logo.svg" alt="유영미술관로고"></h1>
+                <p>
+                    주소 : 경기도 OO시 OO로 [우] XXXXX<br>
+                    TEL : 031) 000-0000 FAX : 031)000-0000<br>
+                    E-MAIL : youyoung@XXX.XXX<br>
+                    COPYRIGHT© 2021 MUSEUM OF YOUYOUNG All Rights Reserved
+                </p>
+                <ul class="snsIcon">
+                    <li><a href="http://facebook.com">페이스북</a></li>
+                    <li><a href="http://instagram.com">인스타그램</a></li>
+                    <li><a href="http://youtube.com">유튜브</a></li>
+                </ul>
+            </div>
+            <aside class="scrollTop">
+                <a href="#">스크롤탑버튼</a>
+            </aside>
+        </footer>
+    </body>
+</html>

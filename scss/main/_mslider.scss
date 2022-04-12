@@ -1,0 +1,142 @@
+@import "../common/var";
+
+/* main */
+#mSlider{
+    width: 100%; min-width: $minWidth; height: 700px; margin-bottom: $subMargin; padding-top: 120px;
+    img{
+        display: block; width: 100%; height: 700px;
+        object-fit: cover; object-position: center;
+    }
+    .type{
+        @include square(95px,35px,$whiteColor,none,$basicText);
+        position: relative; top: -2px;
+        margin-right: 10px; font-weight: 700;
+    }
+    .special{
+        @include square();
+    }
+    .main01{
+        .textbox{
+            position: absolute; top: 220px; right: 0; bottom: 0; left: 0; 
+            margin: 0 auto; 
+            text-align: center;
+            @include mainTitle()
+
+        }
+    }
+    .main02{
+        .textbox{
+            position: absolute; top: 220px; left: calc(50% - 590px);
+            width: 1180px;
+            text-align: left;
+            @include mainTitle()
+        }
+    }
+    .main03{
+        .textbox{
+            position: absolute; top: 200px; left: 0; right: 0; bottom: 0; margin: 0 auto; 
+            width: 1180px;
+            text-align: center; 
+            @include mainTitle()
+        }
+        a{
+            @include square(200px,35px,transparent,2px solid $whiteColor,transparent);
+            .text{ color: $whiteColor; }
+            .icon{ 
+                position: relative; right: -5px; bottom: 3px;
+                color: $whiteColor; font-size: 10px;
+            }
+            margin-bottom: 130px;
+        }
+        p{ height: 70px; font-size: 22px; }
+        .info{ display: block; font-size: 18px; font-weight: 300; color: $whiteColor; }
+    }
+    .swiper-button-prev:after, .swiper-button-next:after{ display: none; }
+    .swiper-button-prev, .swiper-button-next{
+        position: absolute; top: auto; bottom: 90px; 
+        width: 30px; height: 30px; 
+    }
+    .swiper-button-prev{
+        left: calc(50% - 590px);
+        background: {
+            image: url(../images/main/main_btn_sprite.svg);
+            repeat: no-repeat;
+            position: 0 0;
+            size: 60px;
+        }
+    }
+    .swiper-button-prev:hover{
+        background: {
+            image: url(../images/main/main_btn_sprite.svg);
+            repeat: no-repeat;
+            position: right 0;
+            size: 60px;
+        }
+    }
+    .swiper-button-next{
+        right: auto; left: calc(50% - 410px);
+        background: {
+            image: url(../images/main/main_btn_sprite.svg);
+            repeat: no-repeat;
+            position: 0 0;
+            size: 60px;
+        }
+        transform: rotate(180deg);
+    }
+    .swiper-button-next:hover{
+        background: {
+            image: url(../images/main/main_btn_sprite.svg);
+            repeat: no-repeat;
+            position: right 0;
+            size: 60px;
+        }
+        transform: rotate(180deg);
+    }
+    .swiper-pagination{
+        position: absolute; top: auto; bottom: 94px; left: calc(50% - 560px);
+        width: 150px; color: transparent;
+        #text{ display: none; }
+    }
+    .swiper-pagination-current{
+        position: relative; right: 40px;
+        font-size: 20px; color: $whiteColor;
+    }
+    .swiper-pagination-total{
+        position: relative; left: 40px;
+        font-size: 18px; color: $subColor;
+
+    }
+
+    //글자 슬라이드 클래스
+    .type, .special, h3{ 
+        position: relative; left: -150px; opacity: 0;
+        transition: 0.8s; transition-delay: 0.5s;
+    }
+    p, .introSuqare, .info{ 
+        position: relative; right: -150px; opacity: 0;
+        transition: 0.8s; transition-delay: 0.5s;
+    }
+    .swiper-slide-active{
+        .type, .special, h3{ 
+            left: 0; opacity: 1;
+        }
+        p, .introSuqare, .info{ 
+            right: 0; opacity: 1;
+        }        
+    }
+
+    //프로그래스바
+    .progressBg{
+        position: relative; bottom: 105px; left: calc(50% - 515px); z-index: 500;
+        width: 60px; height: 3px;
+        background-color: $subColor;
+        .swiper-progress{
+            position: relative; left: 0; z-index: 500;
+            width: 0; height: 100%;
+            background-color: $mainColor;
+            &.active{
+                width: 100%; transition: 7s;
+            }
+        }
+    }
+}

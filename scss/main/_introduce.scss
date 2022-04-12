@@ -1,0 +1,27 @@
+@import "../common/var";
+
+/* introduce */
+#introduce{
+    width: 100%; min-width: 1180px; height: 300px; margin-bottom: $rowMargin; padding: 70px 0 60px; box-sizing: border-box;
+    background: {
+        image: url(../images/main/introduce_bn.jpg);
+        repeat: no-repeat;
+        size: 100%;
+        attachment: fixed;
+    }
+    h2, p{ 
+        position: relative; top: 150px; opacity: 0;
+        transition: 0.6s;
+        &.active{ position: relative; top: 0; opacity: 1; }
+    }
+    h2{
+        @include h2Text(100%,45px);
+        height: 90px;
+    }
+    p{
+        @include pTitle(100%,20px);
+        line-height: 36px; color: #2f2f2f;
+        transition-delay: 0.3s;
+    }
+
+}

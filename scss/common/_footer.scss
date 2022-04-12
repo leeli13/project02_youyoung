@@ -1,0 +1,141 @@
+@import "var";
+
+/* footer */
+footer{
+    position: relative;
+    width: 100%; min-width: 1180px; height: 315px;
+    background-color: $mainColor;
+}
+.fTop{
+    width: 100%; height: 100px;
+    border-bottom: 1px solid $subColor; box-sizing: border-box;
+    .innerWrap{
+        display: flex; justify-content: space-between;
+    }
+}
+.fNav{
+    li{
+        margin-right: 40px;
+        float: left;
+        a{
+            height: 99px;
+            font-size: 17px; color: $whiteColor; line-height: 99px;
+        }
+        .sitemap{ font-weight: 700; }
+    }
+}
+.familySite{
+    button{
+        width: 250px; height: 60px; margin-top: 20px; padding: 16px 20px; box-sizing: border-box;
+        background-color: #86849b;
+        display: flex; justify-content: space-between;
+        .text{
+            font-size: 17px; color: $whiteColor;
+        }
+        .icon{
+            position: relative; top: 5px;
+            font-size: 10px; color: $whiteColor;
+        }
+        &.active .icon{ transform: rotate(180deg);}
+    }
+    ul{
+        display: none;
+        width: 100%; height: 100px; padding: 15px 20px; box-sizing: border-box;
+        border-top: 2px solid $mainColor;
+        background-color: #86849b;
+        a{
+            display: block;
+            height: 35px;
+            font-size: 16px; color: $whiteColor; font-weight: 400; line-height: 35px;
+        }
+    }
+}
+.fBottom{
+    width: 1180px; height: 215px; margin: 0 auto; padding: 50px 0 10px; box-sizing: border-box;
+    display: flex;
+    h1{
+        flex: 1.5;
+        width: 340px; height: 100px; padding-top: 10px; box-sizing: border-box;
+        img{
+            width: 240px;
+        }
+    }
+    p{
+        flex: 3;
+        font-size: 14px; color: $whiteColor; line-height: 28px;
+    }
+
+    .snsIcon{
+        flex: 1;
+        width: 100%; height: 50px; margin-top: 60px;
+        li{
+            float: left;
+            width: 50px; height: 50px; 
+            margin-left: 10px;
+
+            a{
+                display: block;
+                width: 50px; height: 50px;
+                text-indent: -999em;
+
+                background: {
+                    image: url(../images/common/footer_sns_sprite.svg);
+                    repeat: no-repeat;
+                    size: cover;
+                }
+            }
+
+            @for $i from 1 through 3{
+                &:nth-child(#{$i}) a{
+                    background-position: -50px * ($i - 1) top;
+                }
+            }
+        }
+    }
+}
+
+/* scrollTop */
+.scrollTop{
+    display: none;
+    position: fixed; right: calc(50% - 800px); bottom: 20px;
+    width: 60px; height: 60px;
+    background-color: $mainColor;
+    a{
+        display: block; width: 100%; height: 100%;
+        text-indent: -999em;
+        background: {
+            image: url(../images/common/scroll_btn.svg);
+            repeat: no-repeat;
+            size: 35px;
+            position: center;
+        }
+    }
+    &.active{
+        position: absolute; bottom: 315px;
+    }
+}
+
+/* colorbox */
+#cboxLoadedContent{
+    border: 0;
+}
+#cboxClose{
+    top: 40px; right: 40px;
+    width: 35px; height: 35px;
+    background: {
+        image: url(../images/common/sitemap_close_btn.svg);
+        size: 33px;
+    }
+}
+
+/* mobile */
+.mobileBtn{
+    display: none;
+    width: 100%; min-width: 1180px; padding: 30px 0; border-top: 1px solid $mainColor; box-sizing: border-box;
+    text-align: center;
+}
+.mobileBtn a{
+    padding: 5px 20px;
+    background-color: $mainColor;
+    color: #fff;
+}

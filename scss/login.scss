@@ -1,0 +1,76 @@
+@import "common/var";
+
+/* loginBox */
+#subContents{
+    > p{ margin-top: 20px; }
+}
+.loginBox{
+    width: 1180px; 
+    text-align: center; margin: 0 auto;
+
+    &:after{
+        content: '';
+        clear: both; display: block;
+    }
+    form{
+        width: 420px; height: 320px; margin: 45px auto 10px;
+        text-align: left;
+    }
+    label{
+        position: absolute; left: -999em;
+        &[for="idchk"]{
+            position: static;
+        }
+        font-size: 14px;
+    }
+    input:not(#idchk){
+        width: 100%; height: 60px; margin-bottom: 10px; padding-left: 60px; box-sizing: border-box;
+        border: 1px solid #707070; box-sizing: border-box;
+    }
+    button{ 
+        display: block;
+        width: 100%; height: 65px; margin-top: 15px;
+        background-color: $subColor;
+        font-size: 20px; font-weight: 500; color: $whiteColor;
+    }
+    .joinBtn{
+        display: block;
+        width: 100%; height: 65px; margin-top: 5px;
+        background-color: $mainColor;
+        font-size: 20px; font-weight: 500; color: $whiteColor; line-height: 65px; text-align: center;
+    }
+    ul{
+        display: flex; justify-content: center;
+        li{
+            margin-left: 20px;
+            &:last-child::before{
+                content: '|';
+                position: relative; right: 10px; bottom: 3px;
+                font-size: 10px;
+            }
+        }
+        a{
+            font-weight: 500;
+        }
+    }
+}
+#loginid{
+    background: {
+        image: url(../images/sub/login_loginid_icon.svg);
+        repeat: no-repeat;
+        size: 22px;
+        position: 20px center;
+    }
+}
+#loginpw{
+    background: {
+        image: url(../images/sub/login_loginpw_icon.svg);
+        repeat: no-repeat;
+        size: 22px;
+        position: 20px center;
+    }
+}
+#idchk{
+    position: relative; top: 2px;
+    margin-right: 10px;
+}

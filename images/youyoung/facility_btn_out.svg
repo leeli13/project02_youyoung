@@ -1,0 +1,10 @@
+<svg id="prev" xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <g id="타원_12" data-name="타원 12" fill="#fff" stroke="#c9c9c9" stroke-width="1">
+    <circle cx="33.5" cy="33.5" r="33.5" stroke="none"/>
+    <circle cx="33.5" cy="33.5" r="33" fill="none"/>
+  </g>
+  <g id="arrow" transform="translate(-535 -164)">
+    <path id="다각형_1" data-name="다각형 1" d="M3.5,0,7,6H0Z" transform="translate(547 201) rotate(-90)" fill="#909090"/>
+    <line id="선_59" data-name="선 59" x2="39" transform="translate(551 197.5)" fill="none" stroke="#909090" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23">
+  <g id="그룹_65" data-name="그룹 65" transform="translate(-770 -971)">
+    <g id="타원_16" data-name="타원 16" transform="translate(774 971)" fill="#fff" stroke="#707070" stroke-width="1">
+      <ellipse cx="7" cy="6.5" rx="7" ry="6.5" stroke="none"/>
+      <ellipse cx="7" cy="6.5" rx="6.5" ry="6" fill="none"/>
+    </g>
+    <g id="사각형_113" data-name="사각형 113" transform="translate(770 977)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="22" height="17" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="21" height="16" rx="4.5" fill="none"/>
+    </g>
+    <path id="합치기_5" data-name="합치기 5" d="M-10813,2572v-1h2v1Zm1-1v-1h-1v-1h1v-1a1,1,0,0,1-1-1,1,1,0,0,1,1-1,1,1,0,0,1,1,1v4Z" transform="translate(11593 -1583)" fill="#707070"/>
+  </g>
+</svg>

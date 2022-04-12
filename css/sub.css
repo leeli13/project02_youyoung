@@ -1,0 +1,55 @@
+/* sub layout */
+/* indicator */
+#indicator { position: fixed; top: 0; z-index: 1500; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; min-width: 1180px; height: 60px; margin-top: 120px; border-top: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#indicator.active { top: 80px; height: 60px; margin-top: 0; border-top: none; border-bottom: 1px solid #d3d3d3; background-color: #fff; -webkit-transition: 0.2s; transition: 0.2s; }
+
+#indicator.active header .hBottom { -webkit-box-shadow: none; box-shadow: none; }
+
+#indicator > div { position: relative; width: 224px; }
+
+#indicator .home { display: block; width: 60px; height: 60px; padding-top: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#indicator .home img { display: block; margin: auto; }
+
+#indicator button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 224px; height: 60px; margin-right: 5px; padding-left: 25px; -webkit-box-sizing: border-box; box-sizing: border-box; font-weight: 500; background-color: transparent; }
+
+#indicator ul { display: none; position: absolute; top: 59px; left: 0; z-index: 1000; width: 100%; padding: 20px 0; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #fff; }
+
+#indicator ul li { width: 100%; height: 30px; padding-left: 26px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#indicator ul a { font-size: 15px; font-weight: 400; color: #666; }
+
+#indicator ul a:hover { font-weight: 500; color: #5C597A; }
+
+/* mainBanner */
+#mainBanner { width: 100%; min-width: 1180px; height: 450px; margin: 180px 0 100px 0; background-repeat: no-repeat; background-size: cover; background-position: center center; text-align: center; }
+
+#mainBanner.mainBanner01 { background-image: url(../images/sub/main_img_01.jpg); }
+
+#mainBanner.mainBanner02 { background-image: url(../images/sub/main_img_02.jpg); }
+
+#mainBanner.mainBanner03 { background-image: url(../images/sub/main_img_03.jpg); }
+
+#mainBanner.mainBanner04 { background-image: url(../images/sub/main_img_04.jpg); }
+
+#mainBanner.mainBanner05 { background-image: url(../images/sub/main_img_05.jpg); }
+
+#mainBanner.mainBanner06 { background-image: url(../images/sub/main_img_06.jpg); }
+
+#mainBanner.mainBanner07 { background-image: url(../images/sub/main_img_07.jpg); }
+
+#mainBanner.mainBanner08 { background-image: url(../images/sub/main_img_08.jpg); }
+
+#mainBanner p { font-size: 20px; color: #fff; padding-top: 152px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#mainBanner h2 { position: relative; width: 100%; font-size: 48px; font-weight: 700; color: #fff; }
+
+#mainBanner h2:after { content: ''; position: absolute; right: 50%; top: 95px; width: 3px; height: 80px; background-color: #fff; }
+
+/* subContents */
+#subContents { position: relative; width: 100%; min-width: 1180px; margin: 0 auto 250px; }
+
+#subContents h3 { font-size: 40px; font-weight: 700; text-align: center; }
+
+#subContents > p { margin-top: 40px; font-size: 18px; font-weight: 500; text-align: center; line-height: 35px; }

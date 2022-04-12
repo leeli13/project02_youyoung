@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex,nofollow">
+        <title>회원가입 정보입력 - 유영미술관 YouYoung</title>
+        <link rel="shortcut icon" href="../images/common/favicon.png">
+        <link rel="apple-touch-icon" href="../images/common/favicon_ios.png">
+        <link rel="icon" href="../images/common/favicon_android.png">
+
+        <link rel="stylesheet" href="../css/colorbox.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/sub.css">
+        <link rel="stylesheet" href="../css/join.css">
+
+        <script src="../js/jquery-1.12.0.min.js"></script>
+        <script src="../js/jquery.easing.1.3.js"></script>
+        <script src="../js/jquery.colorbox-min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/sub.js"></script>
+        <script src="../js/join.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="hTop">
+                <div class="hWrap">
+                    <ul class="topNav">
+                        <li><a href="../tnav/login.html">로그인</a></li>
+                        <li><a href="../tnav/join.html">회원가입</a></li>
+                    </ul>
+                    <div class="language">
+                        <button>
+                            <span class="text">KOR</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="#">KOR</a></li>
+                            <li><a href="#">ENG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hBottom">
+                <h1>
+                    <a href="../index.html" title="유영미술관로고">
+                        <img src="../images/common/header_logo.svg" alt="유영미술관로고">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="../youyoung/intro.html" class="mainNav">미술관안내</a>
+                            <ul class="subNav">
+                                <li><a href="../youyoung/intro.html">미술관소개</a></li>
+                                <li><a href="../youyoung/facility.html">시설안내</a></li>
+                                <li><a href="../youyoung/watch.html">관람안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../event/event.html" class="mainNav">교육/행사</a>
+                            <ul class="subNav">
+                                <li><a href="../event/event.html">예정행사</a></li>
+                                <li><a href="../event/connect.html">전시연계</a></li>
+                                <li><a href="../event/schedule.html">월간일정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../display/current.html" class="mainNav">전시</a>
+                            <ul class="subNav">
+                                <li><a href="../display/current.html">현재전시</a></li>
+                                <li><a href="../display/expected.html">예정전시</a></li>
+                                <li><a href="../display/past.html">지난전시</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../collection/collection.html" class="mainNav">소장품</a>
+                            <ul class="subNav">
+                                <li><a href="../collection/collection.html">전체보기</a></li>
+                                <li><a href="../collection/cfield.html">분야별보기</a></li>
+                            </ul>
+                        <li>
+                            <a href="../art/art.html" class="mainNav">아트샵</a>
+                            <ul class="subNav">
+                                <li><a href="../art/art.html">전체보기</a></li>
+                                <li><a href="../art/afield.html">분야별보기</a></li>
+                                <li><a href="../art/author.html">작가별보기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../service/notice.html" class="mainNav">고객광장</a>
+                            <ul class="subNav">
+                                <li><a href="../service/notice.html">공지사항</a></li>
+                                <li><a href="../service/data.html">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="iconNav">
+                    <ul>
+                        <li class="searchIcon">
+                            <a href="#" title="검색창열기">
+                                <img src="../images/common/header_search_icon.svg" alt="검색아이콘">
+                            </a>
+                        </li>
+                        <li class="hamburgerIcon">
+                            <a href="#" title="패널열기">
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                                <span class="line03"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchMenu">
+                    <div class="searchWrap">
+                        <input type="text" id="searchbox" placeholder="검색어를 입력하세요">
+                        <label for="searchbox">검색어입력상자</label>
+                        <div class="searchKeyword">
+                            <p>추천키워드</p>
+                            <ul>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">미술관소개</a></li>
+                                <li><a href="#">소장품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="indicator">
+            <a href="../index.html" class="home" title="메인페이지가기">
+                <img src="../images/sub/indicatior_home_btn.svg" alt="홈버튼">
+            </a>
+            <div class="mainMenu">
+                <button type="button">
+                    <span class="text">유영미술관</span>
+                    <span class="icon">
+                        <img src="../images/sub/indicatior_arrow_btn.svg" alt="메인메뉴더보기">
+                    </span>
+                </button>
+            </div>
+            <div class="subMenu">
+                <button type="button">
+                    <span class="text">회원가입</span>
+                    <span class="icon">
+                        <img src="../images/sub/indicatior_arrow_btn.svg" alt="서브메뉴더보기">
+                    </span>
+                </button>
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <main id="mainBanner" class="mainBanner08">
+            <p>유영미술관</p>
+            <h2>유영미술관에 오신 걸 환영합니다</h2>
+        </main>
+        <section id="subContents">
+            <h3>회원가입</h3>
+            <p>유영미술관에 오신것을 환영합니다</p>
+            <ul class="joinList">
+                <li>약관동의</li>
+                <li class="active">정보입력</li>
+                <li>가입완료</li>
+            </ul>
+            <form action="#" id="joinForm">
+                <fieldset>
+                    <legend>회원가입 입력 구역</legend>
+                    <table>
+                        <caption>회원가입 테이블</caption>
+                        <tr>
+                            <th>
+                                <label for="joinId"><span class="star">*</span> 아이디</label>
+                            </th>
+                            <td>
+                                <input type="text" id="joinId" class="box01" placeholder="영문 소문자/숫자 4-20자" maxlength="20">
+                                <button type="button">중복확인</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="joinPw"><span class="star">*</span> 비밀번호</label>
+                            </th>
+                            <td>
+                                <input type="password" id="joinPw" class="box02" placeholder="영문자/숫자/특수문자 조합 8-16자" maxlength="16">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="joinPwChk"><span class="star">*</span> 비밀번호확인</label>
+                            </th>
+                            <td>
+                                <input type="password" id="joinPwChk" class="box02" placeholder="영문자/숫자/특수문자 조합 8-16자" maxlength="16">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="joinName"><span class="star">*</span> 이름</label>
+                            </th>
+                            <td>
+                                <input type="text" id="joinName" class="box02">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="joinPhone"><span class="star">*</span> 휴대전화번호</label>
+                            </th>
+                            <td>
+                                <input type="number" id="joinPhone" class="box02" placeholder="- 없이 입력하세요">
+                                <div class="spamChk">
+                                    <input type="checkbox" id="smsChk" checked>
+                                    <label for="smsChk">정보/이벤트 SMS 수신에 동의합니다.</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span class="star">*</span> 이메일
+                            </th>
+                            <td>
+                                <input type="text" id="email01" class="box01">
+                                <label for="email01" class="away">이메일아이디작성</label>
+                                <select id="email02" class="box03">
+                                    <option value="직접입력">직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="google.com">google.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                </select>
+                                <label for="email02" class="away">이메일주소선택</label>
+                                <div class="spamChk">
+                                    <input type="checkbox" id="smsChk" checked>
+                                    <label for="smsChk">정보/이벤트 메일 수신에 동의합니다.</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span class="star">*</span> 주소
+                            </th>
+                            <td>
+                                <input type="text" id="sample2_postcode" placeholder="우편번호" class="box01">
+                                <button type="button" onclick="sample2_execDaumPostcode()">우편번호 찾기</button><br>
+                                <input type="text" id="sample2_address" placeholder="주소" class="box01"><br>
+                                <input type="text" id="sample2_detailAddress" placeholder="상세주소" class="box01">
+                                <label for="sample2_postcode" class="away">우편번호</label>
+                                <label for="sample2_postcode" class="away">우편번호 찾기</label>
+                                <label for="sample2_address" class="away">주소</label>
+                                <label for="sample2_detailAddress" class="away">상세주소</label>
+
+                                <div id="layer">
+                                    <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" onclick="closeDaumPostcode()" alt="닫기 버튼">
+                                </div>
+                                <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                                <script src="../js/post.js"></script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span class="star">*</span> 생년월일
+                            </th>
+                            <td>
+                                <select id="birthYear" class="box04"></select>
+                                <label for="birthYear" class="lb01">년</label>
+                                <select id="birthMonth" class="box04"></select>
+                                <label for="birthMonth" class="lb01">월</label>
+                                <select id="birthDate" class="box04"></select>
+                                <label for="birthDate" class="lb01">일</label>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <div class="btnWrap">
+                    <a href="join.html">뒤로가기</a>
+                    <button type="submit">회원가입</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div class="fTop">
+                <div class="innerWrap">
+                    <ul class="fNav">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="../tnav/sitemap.html" class="sitemap">사이트맵</a></li>
+                    </ul>
+                    <div class="familySite">
+                        <button>
+                            <span class="text">FAMILY SITE</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="https://greenart.co.kr/">유영재단</a></li>
+                            <li><a href="https://greenart.co.kr/">유영미술체험관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fBottom">
+                <h1><img src="../images/common/footer_logo.svg" alt="유영미술관로고"></h1>
+                <p>
+                    주소 : 경기도 OO시 OO로 [우] XXXXX<br>
+                    TEL : 031) 000-0000 FAX : 031)000-0000<br>
+                    E-MAIL : youyoung@XXX.XXX<br>
+                    COPYRIGHT© 2021 MUSEUM OF YOUYOUNG All Rights Reserved
+                </p>
+                <ul class="snsIcon">
+                    <li><a href="http://facebook.com">페이스북</a></li>
+                    <li><a href="http://instagram.com">인스타그램</a></li>
+                    <li><a href="http://youtube.com">유튜브</a></li>
+                </ul>
+            </div>
+            <aside class="scrollTop">
+                <a href="#">스크롤탑버튼</a>
+            </aside>
+        </footer>
+    </body>
+</html>

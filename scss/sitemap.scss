@@ -1,0 +1,79 @@
+@import "common/var";
+@import "common/base";
+
+/* sitemap */
+.sitemap{
+    position: relative;
+    width: 1180px; height: 720px; padding: 70px 217px; box-sizing: border-box;
+    h2{
+        margin-bottom: 40px;
+        font-size: 35px; font-weight: 900; color: $mainColor; text-align: center;
+        &::after{
+            content: '';
+            display: block;
+            width: 100px; height: 3px; margin: 0 auto;
+            background-color: $mainColor;
+        }
+    }
+    p{
+        position: absolute; right: -5px; bottom: -15px;
+        font-size: 100px; font-weight: 900; line-height: 120px; text-align: right; color: rgba($subColor,0.7);
+    }
+    @for $i from 1 to 7{
+        .dep0#{$i}{
+            position: relative;
+            display: flex;
+            height: 70px;
+            &::after{
+                content: '';
+                position: absolute; top: 35px; right: 0;
+                width: 535px; height: 1px;
+                background-color: #C6C5D0;
+            }
+        }
+    }
+    > ul > li{
+        &:hover{
+            width: 100%;
+        }
+        &:hover .mainNav{
+            right: 0;
+            background: {
+                position: right top;
+            }
+        }
+        &:hover .subNav{
+            right: 0;
+            opacity: 1;
+        }
+    }
+    .mainNav{
+        display: block;
+        position: relative; right: 5px;
+        width: 165px; height: 100%; margin-right: 90px;
+        background: {
+            clip: text;
+            image: url(../images/common/sitemap_bg_over.png);
+            repeat: no-repeat;
+            position: -250px top;
+        }
+        -webkit-background-clip: text;
+        font-size: 35px; font-weight: 900; line-height: 70px; color: transparent;-webkit-text-stroke: 1px $mainColor;
+        transition: 0.7s;
+    }
+    .subNav{
+        position: relative; right: 100px; z-index: 1000;
+        display: flex; justify-content: center;
+        opacity: 0;
+        transition: 0.6s; transition-delay: 0.3s;
+        li{ margin-right: 30px; }
+        a{
+            display: block;
+            height: 100%;
+            font-size: 25px; font-weight: 700; color: #989898; line-height: 70px;
+            &:hover{
+                color: $mainColor;
+            }
+        }
+    }
+}

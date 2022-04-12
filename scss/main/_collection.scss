@@ -1,0 +1,113 @@
+@import "../common/var";
+
+/* collection */
+#collection{
+    position: relative;
+    width: $minWidth; height: 755px; margin: 0 auto $rowMargin;
+    > h2{
+        @include h2Text();
+    }
+    > p{
+        @include pTitle();
+    }
+    .swiper{
+        width: 100%; height: 630px;
+    }
+    figure{
+        width: 380px; height: 380px;
+        figcaption{
+            position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%;
+            opacity: 0; transition: 0.3s ease-out;
+            background-color: rgba(0,0,0,0.3);
+            a{
+                display: block;
+                width: 75%; height: 75%; margin: 47px auto;
+                border: 2px solid $whiteColor;
+                h3{
+                    width: 100%; height: 40px; margin-top: 120px;
+                    text-align: center; color: $whiteColor; font-size: 18px; font-weight: 500;
+                }
+                p{
+                    width: 100%; height: 60px;
+                    text-align: center; color: $whiteColor; font-size: 15px; font-weight: 400;
+                }
+            }
+        }
+    }
+    .swiper-wrapper{
+        width: 100%; height: 575px;
+    }
+    .swiper-slide{
+        width: 380px; height: 380px; margin: 0 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .swiper-slide-prev, .swiper-slide-next{ opacity: 0.7;}
+    .swiper-slide-active{
+        margin-top: 130px;
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.3); z-index: 5000; transition: 1s ease-out;
+        box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.1);
+    }
+    .swiper-slide-active figure:hover{
+        figcaption{
+            opacity: 1;
+        }
+    }
+    .swiper-pagination-progressbar{
+        top: auto; bottom: 0; left: 0; right: 0; margin: 0 auto;
+        width: 350px; height: 3px;
+        background-color: #ccc;
+        & .swiper-pagination-progressbar-fill{
+            background-color: $basicText;
+        }
+    }
+    .swiper-button-prev:after, .swiper-button-next:after{ display: none; }
+    .swiper-button-prev{
+        top: 40%; left: calc(50% - 680px);
+        width: 76px; height: 76px;
+        background: {
+            image: url(../images/main/collection_btn_out.svg);
+            repeat: no-repeat;
+            size: 76px;
+        }
+    }
+    .swiper-button-prev:hover{
+        top: 40%; left: calc(50% - 680px);
+        width: 76px; height: 76px;
+        background: {
+            image: url(../images/main/collection_btn_over.svg);
+            repeat: no-repeat;
+            size: 76px;
+        }
+        transition: 0.6s;
+    }
+    .swiper-button-next{
+        top: 40%; right: calc(50% - 680px);
+        width: 76px; height: 76px;
+        background: {
+            image: url(../images/main/collection_btn_out.svg);
+            repeat: no-repeat;
+            size: 76px;
+        }
+        transform: rotate(180deg);
+        
+    }
+    .swiper-button-next:hover{
+        top: 40%; right: calc(50% - 680px);
+        width: 76px; height: 76px;
+        background: {
+            image: url(../images/main/collection_btn_over.svg);
+            repeat: no-repeat;
+            size: 76px;
+        }
+        transform: rotate(180deg); transition: 0.6s;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    #collection .swiper-button-next, #collection .swiper-button-prev{ display: none; }
+}

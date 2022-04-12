@@ -1,0 +1,111 @@
+/* searchBox */
+#searchWrap { position: relative; width: 720px; margin: 0 auto; margin: 40px auto 100px; }
+
+#searchWrap label { position: absolute; left: -999em; }
+
+#searchCondition { position: relative; left: 3px; width: 120px; height: 45px; padding: 0 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border: none; border-bottom: 2px solid #707070; box-sizing: border-box; font-weight: 500; }
+
+#searchBox { width: 592px; height: 45px; padding: 0 25px; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 2px solid #707070; box-sizing: border-box; }
+
+#searchBox::-webkit-input-placeholder { color: #d3d3d3; }
+
+#searchBox:-ms-input-placeholder { color: #d3d3d3; }
+
+#searchBox::-ms-input-placeholder { color: #d3d3d3; }
+
+#searchBox::placeholder { color: #d3d3d3; }
+
+#searchBtn { position: absolute; bottom: 5px; right: 20px; width: 45px; height: 45px; background-image: url(../images/sub/sub_search_btn.svg); background-repeat: no-repeat; background-size: 25px; background-position: center; background-color: transparent; text-indent: -999em; }
+
+/* art */
+.artList { width: 1180px; margin: 0 auto; }
+
+.artList ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.artList li { display: none; width: 360px; height: 365px; margin-right: 50px; margin-bottom: 80px; }
+
+.artList li:nth-child(3n) { margin-right: 0; }
+
+.artList li:nth-child(-n+6) { display: block; }
+
+.artList figure { position: relative; width: 100%; height: 100%; overflow: hidden; }
+
+.artList figure .mainImg { width: 100%; height: 100%; }
+
+.artList figure:hover figcaption { opacity: 1; top: 0; }
+
+.artList figcaption { position: absolute; left: 0; top: -60px; width: 360px; height: 60px; padding-right: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); text-align: right; line-height: 70px; opacity: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+
+.artList figcaption .iconImg { width: 30px; height: 25px; }
+
+.moreBtnWrap { width: 1180px; margin: 0 auto; text-align: center; }
+
+.moreBtnWrap button { display: block; width: 200px; height: 46px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; font-weight: 500; text-align: center; line-height: 46px; display: inline-block; background-color: transparent; }
+
+.moreBtnWrap button:hover { border: none; background-color: #5C597A; -webkit-transition: 0.6s; transition: 0.6s; color: #fff; }
+
+/* author */
+.authorWrap { width: 1180px; margin: 70px auto 0; }
+
+.authorWrap .btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 40px 0; }
+
+.authorWrap .btn li { width: 150px; height: 50px; margin-right: 30px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.authorWrap .btn li:last-child { margin-right: 0; }
+
+.authorWrap .btn li a { display: block; width: 100%; height: 100%; font-size: 20px; font-weight: 500; text-align: center; line-height: 48px; }
+
+.authorWrap .btn li a.active { border: none; background-color: #5C597A; color: #fff; }
+
+.authorWrap .contentsWrap { padding: 0 80px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.authorWrap .contentsWrap > div { display: none; }
+
+.authorWrap figure { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 80px 0; }
+
+.authorWrap figcaption { margin-left: 100px; }
+
+.authorWrap figcaption h4 { height: 75px; font-size: 30px; font-weight: 700; }
+
+.authorWrap figcaption p { margin-bottom: 60px; font-size: 18px; font-weight: 500; line-height: 38px; }
+
+.authorWrap figcaption a { display: block; width: 200px; height: 46px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; font-weight: 500; text-align: center; line-height: 46px; }
+
+.authorWrap figcaption a:hover { border: none; background-color: #5C597A; -webkit-transition: 0.6s; transition: 0.6s; color: #fff; }
+
+/* afield */
+.afieldWrap { width: 1180px; margin: 0 auto; }
+
+.afieldWrap .btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 40px 0; }
+
+.afieldWrap .btn > li { width: 120px; height: 45px; margin-right: 15px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.afieldWrap .btn > li:last-child { margin-right: 0; }
+
+.afieldWrap .btn > li > a { display: block; width: 100%; height: 100%; font-size: 20px; font-weight: 500; text-align: center; line-height: 43px; }
+
+.afieldWrap .btn > li > a.active { border: none; background-color: #5C597A; color: #fff; }
+
+.afieldWrap .afieldContentsWrap ul { display: none; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.afieldWrap .afieldContentsWrap ul li { display: none; width: 360px; height: 360px; margin-right: 50px; margin-bottom: 80px; }
+
+.afieldWrap .afieldContentsWrap ul li:nth-child(3n) { margin-right: 0; }
+
+.afieldWrap .afieldContentsWrap ul li:nth-child(-n+6) { display: block; }
+
+.afieldWrap .afieldContentsWrap ul li a { display: block; width: 100%; height: 100%; }
+
+.afieldWrap .afieldContentsWrap ul li a:hover figcaption { opacity: 1; }
+
+.afieldWrap .afieldContentsWrap ul li img { width: 100%; height: 100%; }
+
+.afieldWrap .afieldContentsWrap ul figure { position: relative; width: 100%; height: 100%; overflow: hidden; }
+
+.afieldWrap .afieldContentsWrap ul figure .mainImg { width: 100%; height: 100%; }
+
+.afieldWrap .afieldContentsWrap ul figure:hover figcaption { opacity: 1; top: 0; }
+
+.afieldWrap .afieldContentsWrap ul figcaption { position: absolute; left: 0; top: -60px; width: 360px; height: 60px; padding-right: 15px; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(0, 0, 0, 0.5); text-align: right; line-height: 70px; opacity: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+
+.afieldWrap .afieldContentsWrap ul figcaption .iconImg { width: 30px; height: 25px; }

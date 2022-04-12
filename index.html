@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex,nofollow">
+        <title>유영미술관 YouYoung</title>
+        <link rel="shortcut icon" href="images/common/favicon.png">
+        <link rel="apple-touch-icon" href="images/common/favicon_ios.png">
+        <link rel="icon" href="images/common/favicon_android.png">
+
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/colorbox.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/jquery.colorbox-min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="popup">
+            <div class="popupWrap">
+                <div class="pTop">
+                    <h3>NOTICE</h3>
+                    <p>
+                        본 사이트는 상업적 목적이 아닌 <b>개인 포트폴리오</b> 용도로 만들어<br>
+                        졌습니다. 홈페이지의 일부 내용과 이미지 등은 그 출처가 따로<br>
+                        있음을 밝힙니다.<br>
+                        본 사이트는 <b>HTML5와 CSS3을 기준</b>으로 하여 크롬, 사파리, 오페라,<br>
+                        파이어폭스, IE11이상의 브라우저에 맞춘 홈페이지  입니다.
+                    </p>
+                    <h3>MOBILE</h3>
+                    <p>
+                        QR코드를 스캔하시면 모바일버전으로<br>
+                        이동하실 수 있습니다.
+                    </p>
+                    <img src="images/main/popup_qr.png" alt="유영미술관 큐알코드">
+                </div>
+                <ul class="closeBtn">
+                    <li class="first"><a href="#">오늘 하루 그만 보기</a></li>
+                    <li class="last"><a href="#">닫기</a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="hTop">
+                <div class="hWrap">
+                    <ul class="topNav">
+                        <li><a href="tnav/login.html">로그인</a></li>
+                        <li><a href="tnav/join.html">회원가입</a></li>
+                    </ul>
+                    <div class="language">
+                        <button>
+                            <span class="text">KOR</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="#">KOR</a></li>
+                            <li><a href="#">ENG</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hBottom">
+                <h1>
+                    <a href="index.html" title="유영미술관로고">
+                        <img src="images/common/header_logo.svg" alt="유영미술관로고">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="youyoung/intro.html" class="mainNav">미술관안내</a>
+                            <ul class="subNav">
+                                <li><a href="youyoung/intro.html">미술관소개</a></li>
+                                <li><a href="youyoung/facility.html">시설안내</a></li>
+                                <li><a href="youyoung/watch.html">관람안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="event/event.html" class="mainNav">교육/행사</a>
+                            <ul class="subNav">
+                                <li><a href="event/event.html">예정행사</a></li>
+                                <li><a href="event/connect.html">전시연계</a></li>
+                                <li><a href="event/schedule.html">월간일정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="display/current.html" class="mainNav">전시</a>
+                            <ul class="subNav">
+                                <li><a href="display/current.html">현재전시</a></li>
+                                <li><a href="display/expected.html">예정전시</a></li>
+                                <li><a href="display/past.html">지난전시</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="collection/collection.html" class="mainNav">소장품</a>
+                            <ul class="subNav">
+                                <li><a href="collection/collection.html">전체보기</a></li>
+                                <li><a href="collection/cfield.html">분야별보기</a></li>
+                            </ul>
+                        <li>
+                            <a href="art/art.html" class="mainNav">아트샵</a>
+                            <ul class="subNav">
+                                <li><a href="art/art.html">전체보기</a></li>
+                                <li><a href="art/afield.html">분야별보기</a></li>
+                                <li><a href="art/author.html">작가별보기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="service/notice.html" class="mainNav">고객광장</a>
+                            <ul class="subNav">
+                                <li><a href="service/notice.html">공지사항</a></li>
+                                <li><a href="service/data.html">자료실</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="iconNav">
+                    <ul>
+                        <li class="searchIcon">
+                            <a href="#" title="검색창열기">
+                                <img src="images/common/header_search_icon.svg" alt="검색아이콘">
+                            </a>
+                        </li>
+                        <li class="hamburgerIcon">
+                            <a href="#" title="패널열기">
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                                <span class="line03"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="searchMenu">
+                    <div class="searchWrap">
+                        <input type="text" id="searchbox" placeholder="검색어를 입력하세요">
+                        <label for="searchbox">검색어입력상자</label>
+                        <div class="searchKeyword">
+                            <p>추천키워드</p>
+                            <ul>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">미술관소개</a></li>
+                                <li><a href="#">소장품</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="mSlider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main01">
+                        <img src="images/main/main01.jpg" alt="이선주개인전메인이미지">
+                        <div class="textbox">
+                            <span class="type">Current</span>
+                            <span class="special">Special</span>
+                            <h3>이선주 개인전 [무제 untitled]</h3>
+                            <p>
+                                LEE SUNJOO Solo Exhibition<br>
+                                Special Exhibition Gallery / 2022. 7.10(토) - 8.8(일)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main02">
+                        <img src="images/main/main02.jpg" alt="이현배개인전메인이미지">
+                        <div class="textbox">
+                            <span class="type">Current</span>
+                            <span class="special">Special</span>
+                            <h3>이현배 개인전 [상상금지 No Imagination]</h3>
+                            <p>
+                                LEE Hyunbae<br>
+                                Special Exhibition Gallery / 2022.2.11(토) - 10.17(일)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main03">
+                        <img src="images/main/main03.jpg" alt="유영미술관홍보이미지">
+                        <div class="textbox">
+                            <h3>젊음이 있는 미술관, 유영</h3>
+                            <p>Welcome To Museum of YouYoung</p>
+                            <a href="youyoung/intro.html" class="introSuqare">
+                                <span class="text">미술관 소개 보러가기</span>
+                                <span class="icon">▶</span>
+                            </a>
+                            <span class="info">관람안내 ㅣ 수요일-일요일 10:30 - 17:30 (발권은 1시간 전 마감)</span>    
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <div class="progressBg">
+                    <div class="swiper-progress"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </main>
+        <section id="collection">
+            <h2>소장품</h2>
+            <p>유영미술관 소장품들을 소개합니다</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide collection01">
+                        <figure>
+                            <img src="images/main/collection_bn_01.jpg" alt="회화미술품이미지">
+                            <figcaption>
+                                <a href="collection/cfield.html">
+                                    <h3>정창섭 [무재]</h3>
+                                    <p>회화 / 1978년 경</p>
+                                    <p class="more">+ more</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide collection02">
+                        <figure>
+                            <img src="images/main/collection_bn_02.jpg" alt="판화미술품이미지">
+                            <figcaption>
+                                <a href="collection/cfield.html">
+                                    <h3>배병규 [기다림]</h3>
+                                    <p>판화 / 2005</p>
+                                    <p class="more">+ more</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide collection03">
+                        <figure>
+                            <img src="images/main/collection_bn_03.jpg" alt="조각미술품이미지">
+                            <figcaption>
+                                <a href="collection/cfield.html">
+                                    <h3>김주현 [복잡성 연구 4단계]</h3>
+                                    <p>조각 / 2004</p>
+                                    <p class="more">+ more</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide collection04">
+                        <figure>
+                            <img src="images/main/collection_bn_04.jpg" alt="공예미술품이미지">
+                            <figcaption>
+                                <a href="collection/cfield.html">
+                                    <h3>Andree Thomspon [컵＋받침1]</h3>
+                                    <p>공예 / 1995</p>
+                                    <p class="more">+ more</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide collection05">
+                        <figure>
+                            <img src="images/main/collection_bn_05.jpg" alt="설치미술품이미지">
+                            <figcaption>
+                                <a href="collection/cfield.html">
+                                    <h3>김윤경 [The breathing house]</h3>
+                                    <p>설치 / 2004</p>
+                                    <p class="more">+ more</p>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+        <section id="display">
+            <div class="innerWrap">
+                <h2>전시</h2>
+                <div class="tabbox">
+                    <ul class="btn">
+                        <li><a href="#">현재전시</a></li>
+                        <li><a href="#">예정전시</a></li>
+                        <li><a href="#">지난전시</a></li>
+                    </ul>
+                    <div class="contentsWrap">
+                        <div class="display01">
+                            <figure class="displayLeft">
+                                <img src="images/main/display_current_01.jpg" alt="현재전시이미지">
+                                <figcaption>
+                                    <h3>류주현 개인전 [정오의 꼴 a noon scene]展</h3>
+                                    <p>
+                                        2022년 2월 12일 ~<br>
+                                        ‘공간을 바라보는 작가의 시선과 새로운 시선’
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="displayRight displayBn01">
+                                <a href="display/current.html" class="more">Display more</a>
+                                <img src="images/main/display_current_02.jpg" alt="현재전시배너">
+                                <figcaption>
+                                    <span class="bgText">a noon scene</span>
+                                    <h3>정오의 꼴</h3>
+                                    <p>
+                                        류주현 개인전<br>
+                                        2022년 2월 12일 ~
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="display02">
+                            <figure class="displayLeft">
+                                <img src="images/main/display_expected_01.jpg" alt="예정전시이미지">
+                                <figcaption>
+                                    <h3>정윤영 개인전 [미완의 단면들 Incompleted Parts]展</h3>
+                                    <p>
+                                        2022년 5월 18일 ~<br>
+                                        ‘불완전한 삶의 모습을 담은 작가의 시선’
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="displayRight displayBn02">
+                                <a href="display/expected.html" class="more">Display more</a>
+                                <img src="images/main/display_expected_02.jpg" alt="예정전시배너">
+                                <figcaption>
+                                    <h4>Incompleted Parts</h4>
+                                    <h3>미완의<br>단면들</h3>
+                                    <p>
+                                        정윤영 개인전<br>
+                                        2022년 5월 18일 ~
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="display03">
+                            <figure class="displayLeft">
+                                <img src="images/main/display_past_01.jpg" alt="지난전시이미지">
+                                <figcaption>
+                                    <h3>김은진 개인전 [눈과 손과 바람의 노래]展</h3>
+                                    <p>
+                                        2020년 6월 20일 - 7월 12일<br>
+                                        ‘ 조형요소인 다채로운 색감은 몽환적 공간’
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="displayRight displayBn03">
+                                <a href="display/past.html" class="more">Display more</a>
+                                <img src="images/main/display_past_02.jpg" alt="지난전시배너">
+                                <figcaption>
+                                    <h4>A song of eyes, hands and wind</h4>
+                                    <h3>눈과 손과<br>바람의 노래</h3>
+                                    <p>
+                                        김은진 개인전 / 2020년 6월 20일 - 7월 12일
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="introduce">
+            <h2>Museum Of YouYoung</h2>
+            <p>
+                복합문화공간을 지향하고 조형예술의 틀을 넘어서서 형식과 내용의 예술이 공존하고<br>
+                교차시키는 가운데 예술의 대중적 지반을 넓혀나가고자 합니다.
+            </p>
+        </section>
+        <section id="around">
+            <h2>미술관 둘러보기</h2>
+            <p>더 많은 유영미술관을 만나보세요</p>
+            <ul>
+                <li>
+                    <a href="youyoung/intro.html" title="유영미술관소개링크">
+                        <div class="aroundIcon1"></div>
+                        <h3>미술관소개</h3>
+                        <span class="more">youyoung more</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="event/schedule.html" title="월간일정링크">
+                        <div class="aroundIcon2"></div>
+                        <h3>월간일정</h3>
+                        <span class="more">schedule more</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="art/art.html" title="아트샵링크">
+                        <div class="aroundIcon3"></div>
+                        <h3>아트샵</h3>
+                        <span class="more">shop more</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="board">
+            <div class="notice">
+                <h2>공지사항</h2>
+                <a href="service/notice.html" class="more">more</a>
+                <ul>
+                    <li>
+                        <a href="">[2021 청소년공모제]수상자 리스트</a>
+                        <span class="date">2021-12-17</span>
+                    </li>
+                    <li>
+                        <a href="">2021 유영창작스튜디오 12기 입주작가를 소개합니다</a>
+                        <span class="date">2021-10-23</span>
+                    </li>
+                    <li>
+                        <a href="">[마감]2021 미술주간 It's Museum 신청공지</a>
+                        <span class="date">2021-10-02</span>
+                    </li>
+                    <li>
+                        <a href="">[마감]유영미술관 연수단원 모집공고 모집합니다</a>
+                        <span class="date">2021-08-13</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="media">
+                <figure>
+                    <iframe width="580" height="445" src="https://www.youtube.com/embed/lqMXH5PrbMc?version=3&enablejsapi=1&mute=1" name="media" id="mediaAuto" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </section>
+        <footer>
+            <div class="fTop">
+                <div class="innerWrap">
+                    <ul class="fNav">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="tnav/sitemap.html" class="sitemap">사이트맵</a></li>
+                    </ul>
+                    <div class="familySite">
+                        <button>
+                            <span class="text">FAMILY SITE</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="https://greenart.co.kr/">유영재단</a></li>
+                            <li><a href="https://greenart.co.kr/">유영미술체험관</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fBottom">
+                <h1><img src="images/common/footer_logo.svg" alt="유영미술관로고"></h1>
+                <p>
+                    주소 : 경기도 OO시 OO로 [우] XXXXX<br>
+                    TEL : 031) 000-0000 FAX : 031)000-0000<br>
+                    E-MAIL : youyoung@XXX.XXX<br>
+                    COPYRIGHT© 2021 MUSEUM OF YOUYOUNG All Rights Reserved
+                </p>
+                <ul class="snsIcon">
+                    <li><a href="http://facebook.com">페이스북</a></li>
+                    <li><a href="http://instagram.com">인스타그램</a></li>
+                    <li><a href="http://youtube.com">유튜브</a></li>
+                </ul>
+            </div>
+            <aside class="scrollTop">
+                <a href="#">스크롤탑버튼</a>
+            </aside>
+        </footer>
+        <div class="mobileBtn">
+            <a href="http://myouyoung.dothome.co.kr/">모바일버전</a>
+        </div>
+    </body>
+</html>

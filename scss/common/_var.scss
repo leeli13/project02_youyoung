@@ -1,0 +1,118 @@
+//색상
+$mainColor: #5C597A;
+$subColor: #d3d3d3;
+$whiteColor: #fff;
+$titleText: #242424;
+$basicText: #333;
+
+//폰트
+$basicFont: 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+$bannerFont: 'S-CoreDream-5Medium', sans-serif;
+
+//사이즈
+$minWidth: 1180px;
+$rowMargin: 130px;
+$subMargin: 100px;
+
+//mixin
+@mixin h2Text($w: 100%,$size: 40px,$align: center) {
+    width: $w; height: 60px;
+    font-size: $size; font-weight: 700; color: $titleText; text-align: $align;
+}
+@mixin pTitle($w: 100%,$size: 16px,$align: center) {
+    width: $w; height: 65px;
+    font-size: $size; font-weight: 500; color: $titleText; text-align: $align;
+}
+
+@mixin moreBtn($color: $titleText,$img: url(../images/main/more_icon.svg)) {
+    padding-right: 50px;
+    background: {
+        image: $img;
+        repeat: no-repeat;
+        size: 40px;
+        position: right 10px;
+    }
+    color: $color; font-size: 16px; font-weight: 700;
+}
+@mixin square($w: 93px,$h: 35px,$bg: transparent,$border: 2px solid $whiteColor,$color: $whiteColor){
+    display: inline-block;
+    width: $w; height: $h;
+    border: $border; box-sizing: border-box;
+    background-color: $bg;
+    color: $color; text-align: center; line-height: 31px;
+}
+@mixin mainTitle() {
+    h3{
+        height: 115px;
+        font-size: 48px; font-weight: 500; color: $whiteColor; line-height: 105px;
+    }
+    p{
+        font-size: 22px; font-weight: 300; color: $whiteColor; line-height: 40px;
+    }
+}
+
+//join
+@mixin joinBtn($color: $mainColor){
+    display: block;
+    width:  250px; height: 65px;
+    background-color: $color;
+    font-size: 20px; font-weight: 500; text-align: center; line-height: 65px; color: $whiteColor;
+}
+
+//subMoreBtn
+@mixin subMoreBtn($w: 200px, $h: 46px){
+    display: block;
+    width: $w; height: $h;
+    border: 1px solid #707070; box-sizing: border-box;
+    font-weight: 500; text-align: center; line-height: 46px;
+    &:hover{
+        border: none;
+        background-color: $mainColor;
+        transition: 0.6s;
+        color: $whiteColor;
+    }
+}
+@mixin listDot(){
+    position: relative;
+    margin-bottom: 10px; padding-left: 10px; box-sizing: border-box;
+    font-size: 18px;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 14px; left: 0;
+        width: 2px; height: 2px;
+        background: $basicText;
+    }
+}
+
+//searchBox
+@mixin searchBox {
+    position: relative;
+    width: 720px; margin: 0 auto;
+    label{ position: absolute; left: -999em; }
+}
+@mixin searchBtn {
+    position: absolute; bottom: 5px; right: 20px;
+    width: 45px; height: 45px;
+    background: {
+        image: url(../images/sub/sub_search_btn.svg);
+        repeat: no-repeat;
+        size: 25px;
+        position: center;
+        color: transparent;
+    }
+    text-indent: -999em;
+}
+@mixin searchCondition {
+    position: relative; left: 3px;
+    width: 120px; height: 45px; padding: 0 10px; box-sizing: border-box;
+    border: none; border-bottom: 2px solid #707070; box-sizing: border-box;
+    font-weight: 500;
+}
+@mixin searchInput {
+    width: 592px; height: 45px; padding: 0 25px; box-sizing: border-box;
+    border-bottom: 2px solid #707070; box-sizing: border-box;
+    &::placeholder{
+        color: $subColor;
+    }
+}

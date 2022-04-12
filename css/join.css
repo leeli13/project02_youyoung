@@ -1,0 +1,102 @@
+/* join */
+#subContents > p { margin-top: 20px; }
+
+.joinList { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 50px 0 35px; }
+
+.joinList li { position: relative; width: 110px; height: 110px; margin-right: 90px; border-radius: 50%; background-color: #d3d3d3; font-size: 20px; font-weight: 500; text-align: center; line-height: 110px; color: #fff; }
+
+.joinList li:after { content: ''; position: absolute; top: 55px; left: 120px; width: 62px; height: 1px; background-color: #707070; }
+
+.joinList li:last-child { margin-right: 0; }
+
+.joinList li:last-child:after { display: none; }
+
+.joinList li.active { background-color: #5C597A; }
+
+#joinChk { width: 950px; margin: 0 auto; }
+
+#joinChk .agree { width: 100%; padding: 70px 70px 55px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 1px solid #707070; box-sizing: border-box; }
+
+#joinChk legend { margin-bottom: 20px; font-size: 20px; font-weight: 500; }
+
+#joinChk input { margin-right: 10px; }
+
+#joinChk .termsBox { width: 815px; height: 200px; padding: 25px; margin-bottom: 20px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; overflow-x: hidden; font-size: 14px; }
+
+#joinChk fieldset:not(.line03) { margin-bottom: 60px; }
+
+#joinChk a { display: block; width: 250px; height: 65px; background-color: #5C597A; font-size: 20px; font-weight: 500; text-align: center; line-height: 65px; color: #fff; margin: 30px auto 0; }
+
+/* joinForm */
+#joinForm { width: 1180px; margin: 0 auto; }
+
+#joinForm legend, #joinForm caption, #joinForm .away { position: absolute; left: -999em; }
+
+#joinForm fieldset { width: 950px; margin: 0 auto; padding: 60px 115px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm th { width: 30%; padding: 20px 0; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 17px; font-weight: 500; text-align: left; }
+
+#joinForm th .star { position: relative; top: 2px; color: #5C597A; }
+
+#joinForm td { width: 70%; padding: 20px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm button[type="button"] { width: 195px; height: 45px; border: 2px solid #5C597A; -webkit-box-sizing: border-box; box-sizing: border-box; background: none; font-weight: 500; color: #5C597A; }
+
+#joinForm label { font-weight: 500; }
+
+#joinForm input { padding: 0 15px; }
+
+#joinForm input::-webkit-input-placeholder { font-size: 15px; color: #d3d3d3; }
+
+#joinForm input:-ms-input-placeholder { font-size: 15px; color: #d3d3d3; }
+
+#joinForm input::-ms-input-placeholder { font-size: 15px; color: #d3d3d3; }
+
+#joinForm input::placeholder { font-size: 15px; color: #d3d3d3; }
+
+#joinForm .spamChk { margin-top: 5px; }
+
+#joinForm .spamChk label { margin-left: 5px; font-size: 14px; font-weight: 400; }
+
+#joinForm .box01 { height: 45px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm .box02 { height: 45px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm .box03 { height: 45px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm .box04 { height: 45px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm .box05 { height: 45px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+#joinForm .box01 { width: 255px; margin-right: 10px; }
+
+#joinForm .box02 { width: 465px; }
+
+#joinForm .box03 { width: 195px; }
+
+#joinForm .box04 { width: 120px; margin-top: 5px; }
+
+#joinForm .lb01 { position: relative; bottom: 5px; margin-right: 20px; font-size: 14px; font-weight: 400; }
+
+#joinForm .btnWrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 30px; }
+
+#joinForm .btnWrap a { display: block; width: 250px; height: 65px; background-color: #d3d3d3; font-size: 20px; font-weight: 500; text-align: center; line-height: 65px; color: #fff; margin-right: 20px; }
+
+#joinForm .btnWrap button[type="submit"] { display: block; width: 250px; height: 65px; background-color: #5C597A; font-size: 20px; font-weight: 500; text-align: center; line-height: 65px; color: #fff; }
+
+#layer { display: none; position: absolute; bottom: 0; overflow: hidden; z-index: 1; -webkit-overflow-scrolling: touch; }
+
+#layer img { cursor: pointer; position: absolute; right: -3px; top: -3px; z-index: 1; }
+
+#sample2_address { margin-top: 10px; }
+
+#sample2_detailAddress { margin-top: 10px; }
+
+/* joinComplete */
+.joinComplete { width: 950px; margin: 0 auto; padding: 100px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; }
+
+.joinComplete .big { margin-bottom: 30px; font-size: 30px; font-weight: 700; color: #5C597A; }
+
+.joinComplete .small { margin-bottom: 50px; font-size: 20px; font-weight: 500; }
+
+.joinComplete a { display: block; width: 250px; height: 65px; background-color: #5C597A; font-size: 20px; font-weight: 500; text-align: center; line-height: 65px; color: #fff; margin: 0 auto; }

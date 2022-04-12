@@ -1,0 +1,46 @@
+@import "../common/var";
+
+html,body{ overflow: hidden; }
+#popup{
+    position: fixed; top: 0; left: 0; z-index: 10000;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    .popupWrap{
+        position: absolute; right: 0; left: 0; top: 0; bottom: 0;
+        width: 517px; height: 560px; margin: auto;
+        background-color: #fff; background-image: url(../images/main/popup_bg.png); background-repeat: no-repeat; background-position: 30px 30px;
+        .pTop{
+            padding: 40px 40px 25px; box-sizing: border-box;
+        }
+    }
+    h3{
+        width: 100%; height: 35px;
+        font-size: 16px; font-weight: 700;
+    }
+    p{
+        width: 100%; margin-bottom: 30px;
+        font-size: 15px; line-height: 30px;
+    }
+    img{
+        position: relative; bottom: 100px; left: 260px;
+    }
+    .closeBtn{
+        width: 100%; height: 60px; padding: 0 28px; box-sizing: border-box;
+        .first{ 
+            float: left; display: block; 
+            width: 225px; height: 60px; 
+            background-color: $subColor;
+        }
+        .last{
+            float: right; display: block;
+            width: 225px; height: 60px;
+            background-color: $mainColor;
+            line-height: 60px; font-size: 15px; color: $whiteColor; text-align: center;
+        }
+        a{
+            display: block;
+            width: 100%; height: 100%;
+            line-height: 60px; font-size: 15px; color: $whiteColor; text-align: center;
+        }
+    }
+}

@@ -1,0 +1,261 @@
+@import "common/var";
+
+/* intro */
+
+b{ font-size: 18px; }
+.introWrap{
+    width: 1180px; margin: 0 auto;
+
+    .intro01{
+        width: 100%; height: 400px; margin: 120px 0; padding-top: 90px; box-sizing: border-box;
+        background: {
+            image: url(../images/youyoung/intro_intro01_img.jpg);
+            repeat: no-repeat;
+            size: 100%;
+            position: center;
+        }
+        h4{
+            font-size: 28px; font-weight: 500; color: $whiteColor; text-align: center;
+        }
+        ul{
+            display: flex; justify-content: center; align-items: center;
+            li{
+                position: relative;
+                width: 150px; height: 150px; margin-right: 74px; padding-top: 120px; box-sizing: border-box;
+                text-align: center; color: $whiteColor;
+                &:nth-child(1){
+                    background: {
+                        image: url(../images/youyoung/intro_intro01_icon01.svg);
+                        repeat: no-repeat;
+                        position: center;
+                    }
+                }
+                &:nth-child(2){
+                    background: {
+                        image: url(../images/youyoung/intro_intro01_icon02.svg);
+                        repeat: no-repeat;
+                        position: center 25px;
+                    }
+                }
+                &:nth-child(3){
+                    background: {
+                        image: url(../images/youyoung/intro_intro01_icon03.svg);
+                        repeat: no-repeat;
+                        position: center 3px;
+                    }
+                }
+            }
+            li:after{
+                content: '';
+                position: absolute; bottom: 10px; right: -37px;
+                width: 1px; height: 103px;
+                background-color: rgba(255,255,255,0.3);
+            }
+            li:last-child{ margin-right: 0; }
+            li:last-child:after{ display: none; }
+        }
+    }
+    .intro02{
+        h3{
+            height: 150px;
+        }
+        figure{
+            margin-bottom: 100px;
+            display: flex; justify-content: space-between;
+        }
+        figcaption{
+            h4{ 
+                height: 60px;
+                font-size: 30px; font-weight: 700;
+            }
+            p{ 
+                font-size: 18px; text-align: left; line-height: 38px;
+            }
+        }
+        .contemporary{
+            figcaption{
+                position: relative;
+                padding: 80px 0; box-sizing: border-box;
+                &:after{
+                    content: '';
+                    position: absolute; left: 120px; bottom: 35px;
+                    width: 450px; height: 1px;
+                    background-color: #707070;
+                }
+            }
+        }
+        .art{
+            figcaption{
+                position: relative;
+                padding: 310px 0 20px; box-sizing: border-box;
+                &:after{
+                    content: '';
+                    position: absolute; right: 160px; bottom: 30px;
+                    width: 450px; height: 1px;
+                    background-color: #707070;
+                }
+            }
+        }
+        .culture{
+            figcaption{
+                position: relative;
+                padding: 130px 0; box-sizing: border-box;
+                &:after{
+                    content: '';
+                    position: absolute; left: 75px; bottom: 65px;
+                    width: 450px; height: 1px;
+                    background-color: #707070;
+                }
+            }
+        }
+    }
+}
+/* facility */
+.facilityWrap{
+    width: 1180px; margin: 0 auto;
+    .btn{
+        display: flex; justify-content: center;
+        margin: 40px 0;
+        li{
+            width: 150px; height: 50px; margin-right: 30px;
+            border: 1px solid $subColor; box-sizing: border-box;
+            &:last-child{ margin-right: 0; }
+            a{
+                display: block;
+                width: 100%; height: 100%;
+                font-size: 20px; font-weight: 500; text-align: center; line-height: 48px;
+                &.active{
+                    border: none;
+                    background-color: $mainColor;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+    .contentsWrap{
+        > div{
+            display: none;
+        }
+    }
+    figure{
+        display: flex;
+        figcaption{ 
+            position: relative;
+            padding-top: 50px; box-sizing: border-box; 
+        }
+        img{ 
+            width: 610px; height: 420px;
+            margin-right: 60px; 
+        }
+        h5{
+            font-size: 14px; font-weight: 700;
+        }
+        h4{
+            margin-bottom: 25px;
+            font-size: 35px; font-weight: 700;
+        }
+        p{
+            font-weight: 500; line-height: 32px;
+        }
+        a{
+            position: absolute; bottom: 60px;
+            @include subMoreBtn();
+        }
+    }
+    .swiper{ position: relative; }
+    .swiper-button-prev:after, .swiper-button-next:after{ display: none; }
+    .swiper-button-prev{
+        top: auto; bottom: 60px; left: auto; right: calc(50% - 450px);
+        width: 50px; height: 50px;
+        background: {
+            image: url(../images/youyoung/facility_btn_out.svg);
+            size: 50px;
+        }
+        &:hover{
+            background: {
+                image: url(../images/youyoung/facility_btn_over.svg);
+                size: 50px;
+            }
+        }
+    }
+    .swiper-button-next{
+        top: auto; bottom: 60px; left: auto; right: calc(50% - 520px);
+        width: 50px; height: 50px;
+        background: {
+            image: url(../images/youyoung/facility_btn_out.svg);
+            size: 50px;
+        }
+        transform: rotate(180deg);
+        &:hover{
+            background: {
+                image: url(../images/youyoung/facility_btn_over.svg);
+                size: 50px;
+            }
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/* watch */
+.watchWrap{
+    width: 1180px; margin: 0 auto 250px;
+    border-top: 3px solid $basicText; box-sizing: border-box;
+    h4{
+        font-size: 20px; font-weight: 700;
+    }
+    h3{
+        font-size: 40px; font-weight: 700; margin-top: 10px;
+    }
+    .watch01, .watch03, .watch04{
+        display: flex; justify-content: space-between;
+        padding: 55px 50px; box-sizing: border-box;
+        border-top: 1px solid $subColor;
+    }
+    .watch01, .sessionText{
+        li{
+            @include listDot();
+        }
+    }
+    .watch01{ 
+        .admission02{ margin-top: 30px; }
+    }
+    .watch02{
+        width: 1180px; padding: 55px 50px; box-sizing: border-box;
+        border-top: 1px solid $subColor;
+        .sessionTitle{
+            li{
+                display: flex; align-items: center;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        h4{ margin-right: 40px; }
+        .sessionText{
+            margin-top: 30px;
+        }
+    }
+    .watch03{
+        table{
+            width: 522px; height: 248px; margin: 10px 0 10px;
+            border: 1px solid #707070; box-sizing: border-box; border-collapse: collapse;
+            text-align: center;
+            caption{ position: absolute; left: -999em; }
+            th, td{ 
+                width: 130px; height: 50px;
+                border: 1px solid #707070; box-sizing: border-box; 
+            }
+            th{
+                background-color: #C6C5D0;
+            }
+        }
+        li{
+            @include listDot();
+        }
+    }
+    .circleNone{
+        font-size: 18px; font-weight: 500; margin: 10px 0;
+    }
+    .circleNone::before{ display: none; }
+}

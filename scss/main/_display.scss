@@ -1,0 +1,120 @@
+@import "../common/var";
+
+/* display */
+#display{
+    width: 100%; min-width: $minWidth; height: 1110px; margin-bottom: $rowMargin; padding: 90px 0; box-sizing: border-box; overflow: hidden;
+    background: linear-gradient(90deg, #C6C5D0 50%, #fff 50%);
+
+    h2{
+        @include h2Text(); margin-bottom: 10px;
+    }
+    .btn{
+        display: flex; justify-content: center;
+        li{
+            width: 150px; height: 50px; margin: 0 10px 50px 0;
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                display: block; width: 100%; height: 100%;
+                border: 1px solid $subColor; box-sizing: border-box;
+                background-color: $whiteColor;
+                font-size: 20px; font-weight: 500; text-align: center; line-height: 50px;
+            }
+        }
+    }
+    .displayLeft{
+        float: left;
+        position: relative; right: 350px; opacity: 0;
+        h3{
+            height: 80px;
+            font-size: 20px; font-weight: 700; line-height: 80px;
+        }
+        p{
+            font-size: 17px; font-weight: 400; line-height: 30px;
+        }
+    }
+    .displayRight{
+        float: right;
+        position: relative; left: 350px; opacity: 0;
+        a{
+            @include moreBtn();
+            display: inline-block;
+            margin: 0 0 70px 340px;
+        }
+        img{ display: block; }
+        span, h3, p{ font-family: $bannerFont; }
+    }
+    .displayBn01{
+        width: 500px; height: 650px;
+        position: relative;
+        figcaption{
+            position: absolute; top: 0; left: 0;
+            h3{
+                margin: 150px 0 25px 105px;
+                writing-mode: vertical-rl; text-orientation: mixed;
+                font-size: 50px; font-weight: 700; color: $whiteColor; letter-spacing: -13px;
+            }
+            p{
+                margin-left: 120px;
+                font-size: 14px; color: $whiteColor; line-height: 30px;
+            }
+            .bgText{
+                display: block; width: 650px; height: 105px;
+                transform: rotate(90deg); transform-origin: left bottom;
+                font-size: 100px; font-weight: 700; color: rgba(255,255,255,0.35);
+            }
+        }
+    }
+    .displayBn02{
+        position: relative;
+        figcaption{
+            position: absolute; bottom: 30px; left: 30px;
+            width: 440px; height: 590px; padding: 200px 0 0 30px; box-sizing: border-box;
+            border: 2px solid $whiteColor; box-sizing: border-box;
+            h4{
+                height: 40px;
+                font-size: 28px; font-weight: 600; color: $whiteColor;
+            }
+            h3{
+                height: 155px;
+                font-size: 50px; font-weight: 700; color: $whiteColor; line-height: 72px;
+            }
+            p{
+                margin-left: 5px;
+                font-size: 14px; color: $whiteColor; line-height: 30px;
+            }
+        }
+    }
+    .displayBn03{
+        position: relative;
+        figcaption{
+            position: absolute; bottom: 0;
+            width: 500px; height: 650px; padding-top: 410px; box-sizing: border-box;
+            h4{
+                height: 40px;
+                font-size: 18px; font-weight: 600; color: $basicText; text-align: center;
+            }
+            h3{
+                height: 130px;
+                font-size: 40px; font-weight: 700; color: $basicText; text-align: center;
+            }
+            p{
+                font-size: 10px; color: $basicText; line-height: 30px; text-align: center;
+            }
+        }
+    }
+    .tabbox{
+        .contentsWrap > div{ display: none; }
+        .btn a.active{
+            background-color: $mainColor; color: $whiteColor; border: none;
+            transition: 0.6s;
+        }    
+    }
+    .displayLeft.active{
+        right: 0; opacity: 1; transition: 0.8s ease-out;
+    }
+    .displayRight.active{
+        left: 0; opacity: 1; transition: 0.8s ease-out;
+    }
+}

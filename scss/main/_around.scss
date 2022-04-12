@@ -1,0 +1,89 @@
+@import "../common/var";
+
+/* around */
+#around{
+    width: 1180px; height: 505px; margin: 0 auto $rowMargin;
+    h2{
+        @include h2Text();
+    }
+    p{
+        @include pTitle();
+    }
+    ul{
+        display: flex; justify-content: space-between;
+        li{
+            position: relative; top: 150px; opacity: 0;
+            width: 380px; height: 380px; padding: 10px; box-sizing: border-box;
+            background-color: $whiteColor; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.6s;
+
+            div{
+                width: 250px; height: 250px; margin: 0 auto;
+                background: {
+                    image: url(../images/main/around_sprite_out.svg);
+                    repeat: no-repeat;
+                    size: 750px;
+                }
+                transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+            @for $i from 1 to 4 {
+                .aroundIcon#{$i}{
+                    background-position: -250px * ($i - 1) top;
+                }
+            }
+            .aroundIcon2{
+                background-position: -265px top;
+            }
+
+            h3{
+                display: block;
+                width: 100%; height: 60px; padding-top: 10px; box-sizing: border-box;
+                text-align: center;
+                font-size: 24px; font-weight: 700; color: #666;
+
+                
+            }
+            .more{
+                display: block;
+                width: 150px; padding-left: 115px;
+                text-align: center; font-size: 13px; font-weight: 700; color: #666;
+            }
+            .more::after{
+                content: '';
+                background: url(../images/main/around_more_btn.svg) no-repeat right center;  
+                display: inline-block;
+                width: 40px; height: 10px; margin-left: 5px;
+                
+            }
+         
+            &:hover{
+                border: 1px solid $mainColor; box-sizing: border-box;
+                h3{
+                    color: #3e3c53;
+                }
+            }
+            &:hover div{
+                background: {
+                    image: url(../images/main/around_sprite_over.svg);
+                    repeat: no-repeat;
+                    size: 750px;
+                }
+                @for $i from 1 to 4 {
+                    .aroundIcon#{$i}{
+                        background-position: -250px * ($i - 1) top;
+                    }
+                }
+                .aroundIcon2{
+                    background-position: -265px top;
+                }
+            }
+            &.active{ position: relative; top: 0; opacity: 1; }
+        }
+        @for $i from 1 to 4 {
+            li:nth-child(#{$i}){
+                transition-delay: 0.2s * ($i - 1);
+            }
+        }
+    }
+    
+}

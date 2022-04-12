@@ -1,0 +1,249 @@
+@import "common/var";
+
+/* current */
+.currentWrap{
+    width: 1180px; margin: 100px auto 0; padding: 0 100px; box-sizing: border-box;
+    figure{
+        display: flex; justify-content: flex-start; align-items: center;
+    }
+    figcaption{
+        margin-left: 140px;
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .place{
+            display: block;
+            width: 120px; height: 35px;
+            background-color: $mainColor;
+            color: $whiteColor; text-align: center; line-height: 35px;
+        }
+        h4{
+            margin: 25px 0 15px;
+            font-size: 40px; font-weight: 900;
+        }
+        h5{
+            font-size: 35px; font-weight: 700;
+        }
+        .dateWrap{
+            display: flex; justify-content: space-between;
+            margin-top: 30px;
+        }
+        .date{
+            font-size: 20px; font-weight: 500;
+        }
+        .currentBtn{
+            margin-top: 75px;
+            display: flex; justify-self: start;
+            .moreBtn{
+                @include subMoreBtn(135px, 46px);
+            }
+            .reserveBtn{
+                margin-left: 25px;
+                @include subMoreBtn(135px, 46px);
+                border: none; background-color: $mainColor; color: $whiteColor;
+                &:hover{
+                    border: 1px solid #707070;
+                    background-color: transparent; color: $basicText;
+                }
+
+            }
+        }
+    }
+    .swiper-button-prev:after, .swiper-button-next:after{ display: none; }
+    .swiper-button-prev{
+        top: auto; bottom: 60px; left: auto; right: calc(50% - 340px);
+        width: 50px; height: 50px;
+        background: {
+            image: url(../images/youyoung/facility_btn_out.svg);
+            size: 50px;
+        }
+        &:hover{
+            background: {
+                image: url(../images/youyoung/facility_btn_over.svg);
+                size: 50px;
+            }
+        }
+    }
+    .swiper-button-next{
+        top: auto; bottom: 60px; left: auto; right: calc(50% - 420px);
+        width: 50px; height: 50px;
+        background: {
+            image: url(../images/youyoung/facility_btn_out.svg);
+            size: 50px;
+        }
+        transform: rotate(180deg);
+        &:hover{
+            background: {
+                image: url(../images/youyoung/facility_btn_over.svg);
+                size: 50px;
+            }
+            transform: rotate(180deg);
+        }
+    }
+}
+.shareBtn{
+    margin-left: 30px;
+    background-color: transparent;
+}
+
+/* expected */
+.expectedWrap{
+    width: 1180px; margin: 0 auto;
+    figure{
+        margin-top: 110px;
+        display: flex; justify-content: center; align-items: center;
+    }
+    figcaption{
+        margin-left: 140px;
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .place{
+            display: block;
+            width: 120px; height: 35px;
+            background-color: $mainColor;
+            color: $whiteColor; text-align: center; line-height: 35px;
+        }
+        h4{
+            margin: 25px 0 15px;
+            font-size: 40px; font-weight: 900;
+        }
+        h5{
+            font-size: 35px; font-weight: 700;
+        }
+        .dateWrap{
+            display: flex; justify-content: space-between;
+            margin-top: 30px;
+        }
+        .date{
+            font-size: 20px; font-weight: 500;
+        }
+        .currentBtn{
+            margin-top: 75px;
+            display: flex; justify-self: start;
+            .moreBtn{
+                @include subMoreBtn(135px, 46px);
+            }
+            .reserveBtn{
+                margin-left: 25px;
+                @include subMoreBtn(135px, 46px);
+                border: none; background-color: $mainColor; color: $whiteColor;
+                &:hover{
+                    border: 1px solid #707070;
+                    background-color: transparent; color: $basicText;
+                }
+
+            }
+        }
+    }
+}
+
+/* past */
+.pastWrap{
+    width: 1180px; margin: 0 auto;
+    .pastNotice{
+        margin: 40px 0 90px;
+        text-align: center; font-size: 18px; font-weight: 500;
+    }
+    .pastContents{
+        padding: 0 140px;
+        &::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        figure{
+            position: relative;
+            float: left;
+            width: 400px; height: 550px; margin-right: 100px; margin-bottom: 90px;
+            &:nth-child(2){
+                margin-right: 0;
+            }
+        }
+        figcaption{
+            position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            opacity: 0; transition: 0.6s;
+            > p{
+                padding-top: 220px; box-sizing: border-box;
+                text-align: center; font-size: 25px; font-weight: 700; color: $whiteColor; line-height: 50px; 
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+/* searchBox */
+#searchWrap{
+    @include searchBox();
+}
+#searchCondition{
+    @include searchCondition();
+}
+#searchBox{
+    @include searchInput();
+}
+#searchBtn{
+    @include searchBtn();
+}
+
+
+/* date */
+#dateForm{
+    margin: 40px auto 40px;
+    text-align: center;
+    label{
+        position: absolute; left: -999em;
+    }
+}
+#date{
+    width: 470px; height: 50px; padding-left: 70px;
+    border: 1px solid #707070; box-sizing: border-box;
+    background: {
+        image: url(../images/sub/sub_calendar_icon.svg);
+        repeat: no-repeat;
+        position: 10px center;
+        size: 30px;
+    }
+}
+
+/* calendar */
+.flatpickr-calendar{ border-radius: 0;}
+.flatpickr-calendar.open{ z-index: 0; }
+.flatpickr-current-month{ height: 100; top: 5px; }
+.flatpickr-months .flatpickr-prev-month, .flatpickr-months .flatpickr-next-month{ top: 5px; }
+.numInputWrapper{ margin-left: 20px; }
+.flatpickr-current-month input.cur-year{ font-size: 15px; font-weight: 700; color: $mainColor; }
+.flatpickr-innerContainer{ justify-content: center; }
+.flatpickr-weekday{
+    font-size: 16px; color: $subColor;
+    &:nth-of-type(1){
+        color: $mainColor;
+    }
+}
+.flatpickr-day.today:hover, .flatpickr-day.today:focus{ border-color: $mainColor; background: $mainColor; }
+.rangeMode .flatpickr-day{ 
+    margin-top: 0;
+    &:hover{
+        background: $mainColor; color: $whiteColor;
+    }
+}
+.flatpickr-days{
+    justify-content: center;
+    width: 300px;
+    .flatpickr-day{
+        font-size: 14px;
+    }
+}
+.flatpickr-months .flatpickr-month{ height: 50px; }
+.flatpickr-current-month .flatpickr-monthDropdown-months{ box-sizing: border-box;
+font-size: 18px; font-weight: 500; }
+.flatpickr-current-month .flatpickr-monthDropdown-months:hover{ background: transparent; }

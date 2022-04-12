@@ -1,0 +1,128 @@
+/* intro */
+b { font-size: 18px; }
+
+.introWrap { width: 1180px; margin: 0 auto; }
+
+.introWrap .intro01 { width: 100%; height: 400px; margin: 120px 0; padding-top: 90px; -webkit-box-sizing: border-box; box-sizing: border-box; background-image: url(../images/youyoung/intro_intro01_img.jpg); background-repeat: no-repeat; background-size: 100%; background-position: center; }
+
+.introWrap .intro01 h4 { font-size: 28px; font-weight: 500; color: #fff; text-align: center; }
+
+.introWrap .intro01 ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.introWrap .intro01 ul li { position: relative; width: 150px; height: 150px; margin-right: 74px; padding-top: 120px; -webkit-box-sizing: border-box; box-sizing: border-box; text-align: center; color: #fff; }
+
+.introWrap .intro01 ul li:nth-child(1) { background-image: url(../images/youyoung/intro_intro01_icon01.svg); background-repeat: no-repeat; background-position: center; }
+
+.introWrap .intro01 ul li:nth-child(2) { background-image: url(../images/youyoung/intro_intro01_icon02.svg); background-repeat: no-repeat; background-position: center 25px; }
+
+.introWrap .intro01 ul li:nth-child(3) { background-image: url(../images/youyoung/intro_intro01_icon03.svg); background-repeat: no-repeat; background-position: center 3px; }
+
+.introWrap .intro01 ul li:after { content: ''; position: absolute; bottom: 10px; right: -37px; width: 1px; height: 103px; background-color: rgba(255, 255, 255, 0.3); }
+
+.introWrap .intro01 ul li:last-child { margin-right: 0; }
+
+.introWrap .intro01 ul li:last-child:after { display: none; }
+
+.introWrap .intro02 h3 { height: 150px; }
+
+.introWrap .intro02 figure { margin-bottom: 100px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.introWrap .intro02 figcaption h4 { height: 60px; font-size: 30px; font-weight: 700; }
+
+.introWrap .intro02 figcaption p { font-size: 18px; text-align: left; line-height: 38px; }
+
+.introWrap .intro02 .contemporary figcaption { position: relative; padding: 80px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.introWrap .intro02 .contemporary figcaption:after { content: ''; position: absolute; left: 120px; bottom: 35px; width: 450px; height: 1px; background-color: #707070; }
+
+.introWrap .intro02 .art figcaption { position: relative; padding: 310px 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.introWrap .intro02 .art figcaption:after { content: ''; position: absolute; right: 160px; bottom: 30px; width: 450px; height: 1px; background-color: #707070; }
+
+.introWrap .intro02 .culture figcaption { position: relative; padding: 130px 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.introWrap .intro02 .culture figcaption:after { content: ''; position: absolute; left: 75px; bottom: 65px; width: 450px; height: 1px; background-color: #707070; }
+
+/* facility */
+.facilityWrap { width: 1180px; margin: 0 auto; }
+
+.facilityWrap .btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 40px 0; }
+
+.facilityWrap .btn li { width: 150px; height: 50px; margin-right: 30px; border: 1px solid #d3d3d3; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.facilityWrap .btn li:last-child { margin-right: 0; }
+
+.facilityWrap .btn li a { display: block; width: 100%; height: 100%; font-size: 20px; font-weight: 500; text-align: center; line-height: 48px; }
+
+.facilityWrap .btn li a.active { border: none; background-color: #5C597A; color: #fff; }
+
+.facilityWrap .contentsWrap > div { display: none; }
+
+.facilityWrap figure { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.facilityWrap figure figcaption { position: relative; padding-top: 50px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.facilityWrap figure img { width: 610px; height: 420px; margin-right: 60px; }
+
+.facilityWrap figure h5 { font-size: 14px; font-weight: 700; }
+
+.facilityWrap figure h4 { margin-bottom: 25px; font-size: 35px; font-weight: 700; }
+
+.facilityWrap figure p { font-weight: 500; line-height: 32px; }
+
+.facilityWrap figure a { position: absolute; bottom: 60px; display: block; width: 200px; height: 46px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; font-weight: 500; text-align: center; line-height: 46px; }
+
+.facilityWrap figure a:hover { border: none; background-color: #5C597A; -webkit-transition: 0.6s; transition: 0.6s; color: #fff; }
+
+.facilityWrap .swiper { position: relative; }
+
+.facilityWrap .swiper-button-prev:after, .facilityWrap .swiper-button-next:after { display: none; }
+
+.facilityWrap .swiper-button-prev { top: auto; bottom: 60px; left: auto; right: calc(50% - 450px); width: 50px; height: 50px; background-image: url(../images/youyoung/facility_btn_out.svg); background-size: 50px; }
+
+.facilityWrap .swiper-button-prev:hover { background-image: url(../images/youyoung/facility_btn_over.svg); background-size: 50px; }
+
+.facilityWrap .swiper-button-next { top: auto; bottom: 60px; left: auto; right: calc(50% - 520px); width: 50px; height: 50px; background-image: url(../images/youyoung/facility_btn_out.svg); background-size: 50px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.facilityWrap .swiper-button-next:hover { background-image: url(../images/youyoung/facility_btn_over.svg); background-size: 50px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+/* watch */
+.watchWrap { width: 1180px; margin: 0 auto 250px; border-top: 3px solid #333; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.watchWrap h4 { font-size: 20px; font-weight: 700; }
+
+.watchWrap h3 { font-size: 40px; font-weight: 700; margin-top: 10px; }
+
+.watchWrap .watch01, .watchWrap .watch03, .watchWrap .watch04 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 55px 50px; -webkit-box-sizing: border-box; box-sizing: border-box; border-top: 1px solid #d3d3d3; }
+
+.watchWrap .watch01 li, .watchWrap .sessionText li { position: relative; margin-bottom: 10px; padding-left: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 18px; }
+
+.watchWrap .watch01 li::before, .watchWrap .sessionText li::before { position: absolute; content: ''; top: 14px; left: 0; width: 2px; height: 2px; background: #333; }
+
+.watchWrap .watch01 .admission02 { margin-top: 30px; }
+
+.watchWrap .watch02 { width: 1180px; padding: 55px 50px; -webkit-box-sizing: border-box; box-sizing: border-box; border-top: 1px solid #d3d3d3; }
+
+.watchWrap .watch02 .sessionTitle li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px; }
+
+.watchWrap .watch02 .sessionTitle p { font-size: 18px; }
+
+.watchWrap .watch02 h4 { margin-right: 40px; }
+
+.watchWrap .watch02 .sessionText { margin-top: 30px; }
+
+.watchWrap .watch03 table { width: 522px; height: 248px; margin: 10px 0 10px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; border-collapse: collapse; text-align: center; }
+
+.watchWrap .watch03 table caption { position: absolute; left: -999em; }
+
+.watchWrap .watch03 table th, .watchWrap .watch03 table td { width: 130px; height: 50px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.watchWrap .watch03 table th { background-color: #C6C5D0; }
+
+.watchWrap .watch03 li { position: relative; margin-bottom: 10px; padding-left: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 18px; }
+
+.watchWrap .watch03 li::before { position: absolute; content: ''; top: 14px; left: 0; width: 2px; height: 2px; background: #333; }
+
+.watchWrap .circleNone { font-size: 18px; font-weight: 500; margin: 10px 0; }
+
+.watchWrap .circleNone::before { display: none; }

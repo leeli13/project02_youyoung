@@ -1,0 +1,25 @@
+/* notice */
+.boardBox { width: 1180px; margin: 0 auto; }
+
+.boardBox iframe { margin-top: 80px; width: 100%; height: 500px; }
+
+/* data */
+.dataWrap { width: 1180px; margin: 50px auto 0; }
+
+.dataWrap ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.dataWrap li { width: 550px; height: 420px; }
+
+.dataWrap li:nth-child(2n) { margin-left: 80px; }
+
+.dataWrap li:nth-child(-n+2) { margin-bottom: 90px; }
+
+.dataWrap li a { display: block; width: 100%; height: 100%; }
+
+.dataWrap li a:hover figcaption { border: none; background-color: #d3d3d3; color: #fff; }
+
+.dataWrap figure { width: 100%; height: 330px; }
+
+.dataWrap figure img { width: 100%; height: 100%; }
+
+.dataWrap figcaption { position: relative; top: -5px; width: 100%; height: 90px; border: 1px solid #707070; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: 0.3s; transition: 0.3s; font-size: 18px; font-weight: 700; text-align: center; line-height: 88px; }

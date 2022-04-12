@@ -1,0 +1,158 @@
+@import "common/var";
+
+/* join */
+#subContents{
+    > p{ margin-top: 20px; }
+}
+.joinList{
+    display: flex; justify-content: center; margin: 50px 0 35px;
+    li{
+        position: relative;
+        width: 110px; height: 110px; margin-right: 90px;
+        border-radius: 50%;
+        background-color: $subColor;
+        font-size: 20px; font-weight: 500; text-align: center; line-height: 110px; color: $whiteColor;
+        &:after{
+            content: '';
+            position: absolute; top: 55px; left: 120px;
+            width: 62px; height: 1px;
+            background-color: #707070;
+        }
+        &:last-child{ margin-right: 0; }
+        &:last-child:after{ display: none; }
+        &.active{ background-color: $mainColor; }
+    }
+}
+#joinChk{
+    width: 950px; margin: 0 auto;
+    .agree{
+        width: 100%; padding: 70px 70px 55px; box-sizing: border-box;
+        border: 1px solid #707070; box-sizing: border-box;
+    }
+    legend{
+        margin-bottom: 20px;
+        font-size: 20px; font-weight: 500;
+    }
+    input{ margin-right: 10px; }
+    .termsBox{
+        width: 815px; height: 200px; padding: 25px; margin-bottom: 20px;
+        border: 1px solid #707070; box-sizing: border-box;
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+    fieldset:not(.line03){ margin-bottom: 60px; }
+    a{
+        @include joinBtn();
+        margin: 30px auto 0;
+    }
+}
+
+/* joinForm */
+#joinForm{
+    width: 1180px; margin: 0 auto;
+    legend, caption, .away{ position: absolute; left: -999em; }
+    fieldset{ 
+        width: 950px; margin: 0 auto; padding: 60px 115px; 
+        border: 1px solid #707070; box-sizing: border-box;
+    }
+    th{
+        width: 30%; padding: 20px 0; box-sizing: border-box;
+        font-size: 17px; font-weight: 500; text-align: left;
+        .star{
+            position: relative; top: 2px;
+            color: $mainColor;
+        }
+    }
+    td{ 
+        width: 70%; padding: 20px 0; box-sizing: border-box; 
+    }
+    button[type="button"]{
+        width: 195px; height: 45px;
+        border: 2px solid $mainColor; box-sizing: border-box;
+        background: none;
+        font-weight: 500; color: $mainColor;
+    }
+    label{
+        font-weight: 500;
+    }
+    input{ 
+        padding: 0 15px; 
+    }
+    input::placeholder{
+        font-size: 15px; color: $subColor;
+    }
+    .spamChk{
+        margin-top: 5px;
+        label{
+            margin-left: 5px;
+            font-size: 14px; font-weight: 400;
+        }
+    }
+    @for $i from 1 through 5{
+        .box0#{$i}{
+            height: 45px;
+            border: 1px solid $subColor; box-sizing: border-box;
+        }
+    }
+    .box01{
+        width: 255px; margin-right: 10px;
+    }
+    .box02{
+        width: 465px;
+    }
+    .box03{
+        width: 195px;
+    }
+    .box04{
+        width: 120px; margin-top: 5px;
+    }
+    .lb01{
+        position: relative; bottom: 5px;
+        margin-right: 20px;
+        font-size: 14px; font-weight: 400;
+    }
+    .btnWrap{
+        display: flex; justify-content: center;
+        margin-top: 30px;
+        a{
+            @include joinBtn($subColor);
+            margin-right: 20px
+        }
+        button[type="submit"]{
+            @include joinBtn();
+        }
+    }
+}
+#layer{
+    display:none;
+    position: absolute; bottom: 0;
+    overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;
+    img{
+        cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1
+    }
+}
+#sample2_address{
+    margin-top: 10px;
+}
+#sample2_detailAddress{
+    margin-top: 10px;
+}
+
+/* joinComplete */
+.joinComplete{
+    width: 950px; margin: 0 auto; padding: 100px;
+    border: 1px solid #707070; box-sizing: border-box;
+    text-align: center;
+    .big{
+        margin-bottom: 30px;
+        font-size: 30px; font-weight: 700; color: $mainColor;
+    }
+    .small{
+        margin-bottom: 50px;
+        font-size: 20px; font-weight: 500;
+    }
+    a{
+        @include joinBtn();
+        margin: 0 auto;
+    }
+}
